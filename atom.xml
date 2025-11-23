@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://zhjbbt.github.io</id>
+    <title>秋天科技</title>
+    <updated>2025-11-23T01:54:58.052Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://zhjbbt.github.io"/>
+    <link rel="self" href="https://zhjbbt.github.io/atom.xml"/>
+    <subtitle>分享科技 专注打造丰富多彩的新生活</subtitle>
+    <logo>https://zhjbbt.github.io/images/avatar.png</logo>
+    <icon>https://zhjbbt.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2025, 秋天科技</rights>
+    <entry>
+        <title type="html"><![CDATA[测试自动发布]]></title>
+        <id>https://zhjbbt.github.io/post/ce-shi-zi-dong-fa-bu/</id>
+        <link href="https://zhjbbt.github.io/post/ce-shi-zi-dong-fa-bu/">
+        </link>
+        <updated>2025-11-22T02:32:17.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[冬天养藏之道]]></title>
+        <id>https://zhjbbt.github.io/post/dong-tian-yang-cang-zhi-dao/</id>
+        <link href="https://zhjbbt.github.io/post/dong-tian-yang-cang-zhi-dao/">
+        </link>
+        <updated>2025-11-21T01:00:38.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[文章测试]]></title>
+        <id>https://zhjbbt.github.io/post/wen-zhang-ce-shi/</id>
+        <link href="https://zhjbbt.github.io/post/wen-zhang-ce-shi/">
+        </link>
+        <updated>2025-11-17T01:01:18.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://zhjbbt.github.io/post/hello-gridea/</id>
+        <link href="https://zhjbbt.github.io/post/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></content>
+    </entry>
+</feed>

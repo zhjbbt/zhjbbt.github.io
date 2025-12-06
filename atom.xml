@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>秋天科技</title>
+  <icon>https://zhjbbt.eu.org/img/avatar.png</icon>
+  
+  <link href="https://zhjbbt.eu.org/atom.xml" rel="self"/>
+  
+  <link href="https://zhjbbt.eu.org/"/>
+  <updated>2025-12-06T14:04:30.788Z</updated>
+  <id>https://zhjbbt.eu.org/</id>
+  
+  <author>
+    <name>隔壁王叔</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://zhjbbt.eu.org/2025/12/06/hello-world/"/>
+    <id>https://zhjbbt.eu.org/2025/12/06/hello-world/</id>
+    <published>2025-12-06T14:04:30.788Z</published>
+    <updated>2025-12-06T14:04:30.788Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>测试</title>
+    <link href="https://zhjbbt.eu.org/2025/12/05/%E6%B5%8B%E8%AF%95/"/>
+    <id>https://zhjbbt.eu.org/2025/12/05/%E6%B5%8B%E8%AF%95/</id>
+    <published>2025-12-05T14:05:18.000Z</published>
+    <updated>2025-12-06T14:04:30.788Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;测试文章&quot;&gt;&lt;a href=&quot;#测试文章&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>晚上写点东西</title>
+    <link href="https://zhjbbt.eu.org/2025/12/05/%E6%99%9A%E4%B8%8A%E5%86%99%E7%82%B9%E4%B8%9C%E8%A5%BF/"/>
+    <id>https://zhjbbt.eu.org/2025/12/05/%E6%99%9A%E4%B8%8A%E5%86%99%E7%82%B9%E4%B8%9C%E8%A5%BF/</id>
+    <published>2025-12-05T06:56:40.600Z</published>
+    <updated>2025-12-05T07:00:03.428Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;随便写点测试一下&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;2025&amp;#x2F;12&amp;#x2F;5&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="测试" scheme="https://zhjbbt.eu.org/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="测试" scheme="https://zhjbbt.eu.org/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+</feed>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>秋天科技の博客</title>
+  <icon>https://zhjbbt.eu.org/img/avatar.png</icon>
+  <subtitle>欢迎加入</subtitle>
+  <link href="https://zhjbbt.eu.org/atom.xml" rel="self"/>
+  
+  <link href="https://zhjbbt.eu.org/"/>
+  <updated>2025-12-25T14:48:24.723Z</updated>
+  <id>https://zhjbbt.eu.org/</id>
+  
+  <author>
+    <name>秋天科技</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://zhjbbt.eu.org/posts/16107.html"/>
+    <id>https://zhjbbt.eu.org/posts/16107.html</id>
+    <published>2025-12-25T14:48:24.723Z</published>
+    <updated>2025-12-25T14:48:24.723Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>休息的一天</title>
+    <link href="https://zhjbbt.eu.org/posts/xiuxi.html"/>
+    <id>https://zhjbbt.eu.org/posts/xiuxi.html</id>
+    <published>2025-12-25T14:48:24.723Z</published>
+    <updated>2025-12-15T16:54:59.649Z</updated>
+    
+    
+    <summary type="html">休息的一天 一个简化 Hexo 博客多语言生成和管理的插件 测试3 图片引用  </summary>
+    
+    
+    
+    <category term="测试" scheme="https://zhjbbt.eu.org/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="休息" scheme="https://zhjbbt.eu.org/tags/%E4%BC%91%E6%81%AF/"/>
+    
+    <category term="测试" scheme="https://zhjbbt.eu.org/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+</feed>

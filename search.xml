@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/posts/4a17b156.html</url>
+    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post$ hexo new "My New Post"
+
+More info: Writing
+Run server$ hexo server
+
+More info: Server
+Generate static files$ hexo generate
+
+More info: Generating
+Deploy to remote sites$ hexo deploy
+
+More info: Deployment
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>入门</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>休息的一天</title>
+    <url>/posts/xiuxi.html</url>
+    <content><![CDATA[休息的一天一个简化 Hexo 博客多语言生成和管理的插件
+测试2测试3图片引用
+
+七牛测试
+图2
+
+图三
+
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>休息</tag>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>宁德时代一线打工避坑语录</title>
+    <url>/posts/f6662e0c.html</url>
+    <content><![CDATA[在宁德时代干了2年，从新人熬成老油条，总结了一些亲身经历的避坑经验”1️⃣ 别信招聘说辞招聘时说的”轻松不累”、”月入过万”全是骗人的。好岗位基本轮不到新人，进来先把你安排到最苦最累的岗位，干一段时间再说。
+2️⃣ 别太老实老实人永远吃亏。该争取的要争取，该拒绝的别不好意思。你越好说话，活越往你身上堆。
+3️⃣ 别跟领导硬刚说话留三分，不然容易被穿小鞋。领导给你记一笔，后面有的是办法整你。
+4️⃣ 别跟同事掏心掏肺厂里没有真心只有利益。今天好兄弟，明天就可能背后捅刀。你说的每一句话，都可能变成别人的把柄。
+5️⃣ 别得罪任何人得罪一个人就是得罪一个圈子。圈子里可能就有领导，后期会被使绊子。表面上过得去就行，别较真。
+6️⃣ 别长期干工厂是青春饭，熬久了身体垮、没前途。攒点钱赶紧走，别把最好的青春全耗在这。
+7️⃣ 少说少做少错多说多做多错，不说不做不错。
+这是工厂生存的铁律。安安静静干完活，拿钱走人，别给自己找麻烦。
+📌 总结一句话工厂能挣钱，但挣的是辛苦钱、血汗钱。别把最好的青春全耗在这。🏭
+如果觉得有用，记得点个 赞 和 在看 👇
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>宁德时代</tag>
+        <tag>打工</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>提高国内访问 github 速度的 9 种方法</title>
+    <url>/posts/e51d0735.html</url>
+    <content><![CDATA[提高国内访问 GitHub 速度的 9 种方法
+
+以下方案综合了 2020-2026 年社区验证有效的加速策略，按推荐程度排序。
+
+⭐ 方法 1：GitHub 镜像访问（最简单）直接访问 GitHub 的克隆镜像站，内容与 GitHub 完全同步：
+
+
+
+镜像地址
+特点
+
+
+
+https://github.com.cnpmjs.org
+稳定，支持搜索和克隆
+
+
+https://hub.fastgit.org
+老牌镜像，同步较快
+
+
+https://gitclone.com/
+支持 StackOverFlow 镜像
+
+
+✅ 优点：无需任何配置，打开即用❌ 缺点：不支持登录、不支持上传&#x2F;PR
+⭐ 方法 2：Chrome&#x2F;Edge 浏览器加速插件（最推荐 🏆）Fast-GitHub 是目前最强的浏览器加速插件，2026 年仍在活跃维护：
+
+📦 安装方式：
+
+从 GitCode 仓库 克隆源码
+浏览器打开 chrome://extensions/ → 开启开发者模式
+点击「加载已解压的扩展程序」→ 选择 fast_github/src 目录
+
+
+📊 实测效果（2026 年测试数据）：
+
+
+
+
+
+场景
+加速前
+加速后
+提升倍数
+
+
+
+100MB 仓库克隆
+25-35 分钟
+1.5-3 分钟
+15-25 倍
+
+
+50MB Release 文件
+8-15 KB&#x2F;s
+800KB-5 MB&#x2F;s
+50-300 倍
+
+
+页面加载
+6-12 秒
+0.8-1.5 秒
+8-15 倍
+
+
+✅ 优点：智能路由 + 多线程下载 + 零配置，所有处理在本地完成，隐私安全❌ 缺点：仅支持 Chrome 88+ &#x2F; Edge 88+ &#x2F; Firefox 86+
+⭐ 方法 3：通过 Gitee（码云）中转（最稳定）利用 Gitee 的「从 GitHub 导入仓库」功能：
+
+访问 gitee.com 并登录
+顶部菜单 → 「从 GitHub&#x2F;GitLab 导入仓库」
+粘贴 GitHub 仓库地址 → 点击导入
+等待同步完成后，在 Gitee 上浏览&#x2F;下载&#x2F;克隆
+
+✅ 优点：速度极快（国内服务器），支持持续同步刷新❌ 缺点：需要手动刷新同步，非实时
+方法 4：GitHub 文件加速（Cloudflare Workers）利用 Cloudflare Workers 对 Release、Archive、项目文件进行 CDN 加速：
+
+
+
+加速站
+地址
+
+
+
+ghproxy
+https://mirror.ghproxy.com/
+
+
+99988866
+https://gh.api.99988866.xyz
+
+
+gitwarp
+https://www.gitwarp.com/
+
+
+也可自行部署开源项目 gh-proxy
+✅ 优点：无需安装，粘贴链接即可加速下载 Release 文件
+方法 5：GitHub 加速下载工具将 GitHub 地址粘贴到工具中，即可代理加速下载：
+
+
+
+工具
+地址
+
+
+
+Toolwa
+http://toolwa.com/github/
+
+
+GitWarp
+https://www.gitwarp.com/
+
+
+ZHLH6 加速
+https://github.zhlh6.cn（输入仓库地址生成加速 git&#x2F;ssh 链接）
+
+
+✅ 优点：一键操作，适合临时下载
+方法 6：GitHub Raw 加速GitHub Raw 文件的真实域名是 raw.githubusercontent.com，很多加速方案对此域名无效。
+解决方案：将域名替换为 Static CDN 反代：
+# 替换前
+https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;用户名&#x2F;仓库&#x2F;分支&#x2F;文件
+
+# 替换后
+https:&#x2F;&#x2F;raw.staticdn.net&#x2F;用户名&#x2F;仓库&#x2F;分支&#x2F;文件
+
+✅ 优点：简单有效，适合加载原始代码文件❌ 缺点：仅对 Raw 文件有效
+方法 7：GitHub + Jsdelivr CDN（静态文件专用）Jsdelivr 是免费 CDN，可作为 GitHub 静态文件的加速镜像：
+https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;用户名&#x2F;仓库名@分支&#x2F;文件路径
+
+
+
+
+CDN 节点
+延迟
+备注
+
+
+
+https://gcore.jsdelivr.net
+~180ms
+海外服务器，有缓存
+
+
+https://cdn.jsdelivr.net
+~180ms
+海外服务器，有缓存
+
+
+https://jsd.onmicrosoft.cn
+~15ms
+国内节点，无缓存
+
+
+https://jsd.cdn.zzko.cn
+~30ms
+国内节点，无缓存
+
+
+✅ 优点：可直接在浏览器访问文件❌ 缺点：无法获取 exe&#x2F;dmg 等 Release 附件，仅适合静态文件
+方法 8：修改 HOSTS 文件（无需安装软件）手动将 GitHub 域名绑定到最快的 CDN IP：
+📌 操作步骤：第一步：获取最快 IP（以 2026 年数据为例）
+
+
+
+域名
+推荐 IP
+
+
+
+github.global.ssl.fastly.net
+199.232.69.194
+
+
+github.com
+140.82.114.4
+
+
+
+💡 IP 会变化，建议访问 ipaddress.com 获取最新值
+
+第二步：修改 hosts 文件
+
+
+
+系统
+路径
+
+
+
+Windows
+C:\Windows\System32\drivers\etc\hosts
+
+
+Mac
+/etc/hosts
+
+
+Linux
+/etc/hosts
+
+
+第三步：添加以下内容（Windows 需先获取写入权限）
+199.232.69.194 github.global.ssl.fastly.net
+140.82.114.4    github.com
+
+第四步：刷新 DNS 缓存
+# Windows
+ipconfig /flushdns
+
+# Mac
+sudo killall -HUP mDNSResponder
+
+# Linux
+sudo nscd restart
+
+✅ 优点：一劳永逸，不依赖第三方服务❌ 缺点：IP 经常变化需手动更新，可能遇到 SSL 证书问题
+方法 9：使用 VPN &#x2F; 代理（最彻底）通过代理工具（如 Clash、V2Ray、Shadowsocks 等）将流量转发到境外服务器，直接访问 GitHub 原始地址。
+✅ 优点：效果最好，能访问所有功能（包括登录、PR、Issues）❌ 缺点：需要付费，有一定法律风险
+🎯 总结：我该选哪个？
+
+
+需求
+推荐方案
+
+
+
+🖥️ 日常浏览 + 克隆代码
+方法 2（Fast-GitHub 插件） ⭐⭐⭐
+
+
+📦 下载 Release 文件
+方法 4（ghproxy）+ 方法 3（Gitee）
+
+
+🔧 临时下载单个文件
+方法 5（GitWarp &#x2F; Toolwa）
+
+
+📄 加速 Raw 文件
+方法 6（raw.staticdn.net）
+
+
+🖥️ 不想装任何东西
+方法 1（镜像站）+ 方法 8（hosts）
+
+
+🚀 追求最快最稳
+方法 9（VPN）
+
+
+
+💡 最佳组合：安装 Fast-GitHub 插件 + 备用 Gitee 中转，基本可以覆盖 99% 的使用场景！
+
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一篇文章</title>
+    <url>/posts/5c2fafc7.html</url>
+    <content><![CDATA[
+    
+
+
+麦家一段很通透的话：
+“有福之人千人恨，无福之人恨千人，我不在意别人背后怎么说我。
+我的人生如此宝贵，我在意的人喜欢我就够了，我没那么多人需要去满足。做自己就好。”
+看到这段话，心里一下子松快了。
+多少人活得太累，就是因为反着来的。
+你过得好，就有人恨你。你升职了，恨你的人说你走关系。
+你赚钱了，恨你的人说你不干净。你日子舒坦了，恨你的人说你运气好。
+不是你做错了什么，是你活成了他们够不着的样子。
+有福之人，注定被千人恨。这是代价，也是勋章。
+反过来，没福气的人，看谁都不顺眼。
+恨别人有钱，恨别人幸福，恨别人运气好。
+恨了一圈，自己还是老样子。越恨越穷，越穷越恨。
+我不在意别人背后怎么说我。这话说起来容易，做起来难。
+谁不怕被人议论？谁不怕背后有人捅刀子？但你在意有用吗？
+嘴长在别人身上，你堵不住。你解释，人家说你心虚。你不理，人家说你默认。
+不在意。不是听不见，是不往心里去。
+别人的嘴，你管不了。你的心，你可以管。
+你不接招，那些闲话就是一阵风，吹过就散了。
+你接了招，就变成了心里的刺，扎自己一辈子。
+你的人生，只有一次。每天24小时，过一秒少一秒。你把时间花在琢磨“别人怎么看我”上，就是花在了不值得的地方。
+别人说你一句不好，你失眠一整夜。别人给你一个白眼，你纠结好几天。
+你的命，就这么不值钱吗？
+有那功夫，不如多睡一觉，多看本书，多陪陪家人。
+你的人生很宝贵，别浪费在垃圾人身上。
+我在意的人喜欢我就够了
+谁是你真正在意的人？家人，挚友，恩师。就这几个。
+他们在意你，就够了。不相干的人喜不喜欢你，关你什么事？
+把“被喜欢”的范围缩小到“我在意的人”，你的负担瞬间少掉90%。
+你不是人民币，不可能让所有人都满意。
+而且那些对你不满意的人，你就算满足了他们这一次，下一次他们还会提更过分的要求。这种人，不值得你花力气。
+你只需要满足三样东西：你的良知，你的家人，你的饭碗。其他的，爱谁谁。
+做自己，不是任性妄为。是不再为了别人的眼光，把自己拧成麻花。
+你是什么样，就什么样。不装，不演，不讨好。喜欢你的人，自然喜欢你。不喜欢你的人，拉倒。
+这辈子很短，别把时间花在讨好无关紧要的人身上。
+你的好，留给对你好的人。你的时间，花在值得的事上。
+你的人生如此宝贵，做自己，就好。
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>AI短视频5分钟教程</title>
+    <url>/posts/56015.html</url>
+    <content><![CDATA[
+文 &#x2F; 秋天科技
+
+做短视频最大的误区，是以为必须先学剪辑——其实你根本不用剪。
+你有没有这种感觉——想做短视频涨粉，打开剪辑软件却瞬间劝退。
+时间轴拉不齐、字幕对不上、配乐找不到……一条一分钟的视频，硬生生剪了三小时，发出来还没几个播放。
+但我最近摸索出一套流程：从写脚本到导出成片，全程5分钟，而且几乎不用动手剪。
+不是我手速快，是工具替我干了90%的活。
+今天把这套**「ChatGPT + 剪映」**的流水线，毫无保留交给你。
+
+本文看点
+01 用 ChatGPT 秒出可拍脚本
+02 剪映一键成片
+03 5 分钟精修导出
+
+
+01 先搞懂：省时间的不是 AI 帮你剪，是你根本不用剪很多人卡在第一步：以为做短视频必须先学 PR、学剪辑。其实没必要。
+
+「把文案直接变成视频」，才是真正的效率核心。
+
+流程只有三步：
+ChatGPT 写脚本 → 剪映「图文成片」一键生成 → 你只做微调
+剩下要做的，只是换换画面、加个音乐、做个封面。剪片这事儿，交给 AI。
+
+02 STEP 01 用 ChatGPT 写「能直接拍」的脚本（1分钟）别让 AI 给你写一篇文章，要它直接给你口播稿 + 分镜表。
+把这段 prompt 丢给 ChatGPT（换成你的主题）：
+
+PROMPT你是一个爆款短视频脚本专家。请为一支约 60 秒的 [赛道] 短视频写脚本，主题 [XXX]。要求：① 开头 3 秒强钩子（反常识 &#x2F; 悬念 &#x2F; 痛点）；② 正文 3 个要点，口语化、有画面感；③ 结尾给明确行动号召；④ 输出**「口播文案」**全文 + 「分镜表」（时间轴｜画面描述｜字幕）；⑤ 语气像朋友聊天。
+
+拿到结果后，只复制「口播文案」那段，下一步直接用。
+
+提速 tip：把这段 prompt 存成常用预设，以后每次只改主题，10 秒出脚本。
+
+
+03 STEP 02 剪映「图文成片」一键成片（2分钟）这是自动剪辑的灵魂，也是全程最省事的一步。
+
+手机 &#x2F; 桌面剪映 → 点「图文成片」→ 选「自由编辑文案」→ 粘贴口播文案 → 点生成。
+
+等十几秒，AI 会自动帮你完成四件事：
+
+配音
+智能字幕
+匹配素材画面
+卡点节奏
+
+生成后，在「配音」里换音色（小云、逍遥、资讯男声都不错），在「样式」里挑字幕模板。
+
+🌍 海外用 CapCut：桌面端找「Script to Video &#x2F; AI 生成」入口；若没有该入口，用「文字转语音 + 自动字幕」组合，也能达到八成效果。
+
+
+04 STEP 03 精修 &amp; 导出（2分钟）自动生成只是**「毛坯」，花 2 分钟去去 AI 味**，观感立刻不一样：
+
+换废片：某段画面不搭？点片段 → 替换素材，挑更贴切的。
+调节奏：钩子前加 0.5 秒停顿或缩放，死死留住前 3 秒。
+加 BGM：选一首轻音乐，音量压到 15%，做情绪铺垫。
+做封面：选一帧 + 大字标题，直接拉高点击率。
+去水印：图文成片默认带剪映水印，导出时关掉更干净。
+
+最后导出1080P 30fps，直接发抖音 &#x2F; 视频号 &#x2F; YouTube Shorts &#x2F; TikTok。
+
+05 ADVANCED 想更独特？进阶「半自动」「图文成片」胜在快，但素材来自公共库，容易和别人撞片。
+想要差异化，把 Step 2 换成半自动：
+
+配音自己定：用 ElevenLabs（拟真最强）或 Edge TTS &#x2F; TTSMaker（免费中文）先生成 mp3，再拖进剪映当旁白。
+画面自己生：用即梦 AI &#x2F; 豆包出图，或用可灵 &#x2F; Pika &#x2F; Sora 出短视频片段，替换掉自动素材。
+精剪自己来：在时间线里手动对齐「旁白 + 画面 + 字幕」，节奏完全可控。
+
+进阶版时间会拉到15–30 分钟，但成品更独家——按需取舍。
+
+∞ 最后划个重点ChatGPT 出文案 → 剪映一键成片 → 换片加乐做封面 → 导出
+熟练之后，单次 5 分钟真能搞定。
+
+做 AI 短视频最大的效率杠杆，不是学会剪辑，而是用「图文成片」把文案一键变视频，让零剪辑基础的人也能 5 分钟出片。
+
+我建议你今天就用这套方法，先产一条试试——别等「学会了再开始」，开始本身就是最好的学习。
+你们平时做短视频卡在哪一步？评论区聊聊，我挑几个高频问题，下期专门讲。👇
+
+我是 秋天科技，热衷于分享 AI 工具与效率方法论。
+如果你觉得今天这篇有收获，欢迎点赞、在看、转发三连，我们下篇见。
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>AI短视频</tag>
+        <tag>ChatGPT</tag>
+        <tag>剪映</tag>
+        <tag>图文成片</tag>
+        <tag>短视频运营</tag>
+        <tag>效率工具</tag>
+      </tags>
+  </entry>
+</search>

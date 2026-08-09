@@ -1,0 +1,461 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>提高国内访问 github 速度的 9 种方法 | 秋天科技の博客</title><meta name="author" content="秋天科技"><meta name="copyright" content="秋天科技"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="提高国内访问 GitHub 速度的 9 种方法  以下方案综合了 2020-2026 年社区验证有效的加速策略，按推荐程度排序。  ⭐ 方法 1：GitHub 镜像访问（最简单）直接访问 GitHub 的克隆镜像站，内容与 GitHub 完全同步：    镜像地址 特点    https://..."><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "提高国内访问 github 速度的 9 种方法",
+  "url": "https://zhjbbt.eu.org/posts/e51d0735.html",
+  "image": "https://zhjbbt.eu.org/img/cover/bg1.jpg",
+  "datePublished": "2026-05-17T14:03:32.000Z",
+  "dateModified": "2026-08-09T09:21:06.299Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "秋天科技",
+      "url": "https://zhjbbt.eu.org"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://zhjbbt.eu.org/posts/e51d0735.html"><link rel="preconnect" href="//unpkg.com"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><link rel="stylesheet" href="https://unpkg.com/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"top-center"},
+  infinitegrid: {
+    js: 'https://unpkg.com/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '提高国内访问 github 速度的 9 种方法',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/css/VolantisTags.css"><link rel="stylesheet" href="/css/volantis.css"><link rel="stylesheet" href="/css/fontAnimation.css"><link rel="stylesheet" href="/css/badge.css"><meta name="generator" content="Hexo 8.1.2"><link rel="alternate" href="/atom.xml" title="秋天科技の博客" type="application/atom+xml">
+</head><body><div class="bg-animation" id="web_bg" style="background-image: url(/url('/img/banner/4.jpg'));"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">14</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 秋天杂谈</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/daily-news/"><span> 📰 每日早报</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我的</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/cover/bg1.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">秋天科技の博客</span></a><a class="nav-page-title" href="/"><span class="site-name">提高国内访问 github 速度的 9 种方法</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 秋天杂谈</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/daily-news/"><span> 📰 每日早报</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我的</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">提高国内访问 github 速度的 9 种方法</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-05-17T14:03:32.000Z" title="发表于 2026-05-17 22:03:32">2026-05-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-08-09T09:21:06.299Z" title="更新于 2026-08-09 17:21:06">2026-08-09</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">1.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/posts/e51d0735.html#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/posts/e51d0735.html" itemprop="commentCount"><i class="fa-solid fa-spinner fa-spin"></i></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><div id="post-outdate-notice" data="{&quot;limitDay&quot;:365,&quot;messagePrev&quot;:&quot;It has been&quot;,&quot;messageNext&quot;:&quot;days since the last update, the content of the article may be outdated.&quot;,&quot;postUpdate&quot;:&quot;2026-08-09 17:21:06&quot;}" hidden></div><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="提高国内访问-GitHub-速度的-9-种方法"><a href="#提高国内访问-GitHub-速度的-9-种方法" class="headerlink" title="提高国内访问 GitHub 速度的 9 种方法"></a>提高国内访问 GitHub 速度的 9 种方法</h1><hr>
+<blockquote>
+<p>以下方案综合了 2020-2026 年社区验证有效的加速策略，按推荐程度排序。</p>
+</blockquote>
+<h2 id="⭐-方法-1：GitHub-镜像访问（最简单）"><a href="#⭐-方法-1：GitHub-镜像访问（最简单）" class="headerlink" title="⭐ 方法 1：GitHub 镜像访问（最简单）"></a>⭐ 方法 1：GitHub 镜像访问（最简单）</h2><p>直接访问 GitHub 的克隆镜像站，内容与 GitHub 完全同步：</p>
+<table>
+<thead>
+<tr>
+<th>镜像地址</th>
+<th>特点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>https://github.com.cnpmjs.org</code></td>
+<td>稳定，支持搜索和克隆</td>
+</tr>
+<tr>
+<td><code>https://hub.fastgit.org</code></td>
+<td>老牌镜像，同步较快</td>
+</tr>
+<tr>
+<td><code>https://gitclone.com/</code></td>
+<td>支持 StackOverFlow 镜像</td>
+</tr>
+</tbody></table>
+<p>✅ <strong>优点</strong>：无需任何配置，打开即用<br>❌ <strong>缺点</strong>：不支持登录、不支持上传&#x2F;PR</p>
+<h2 id="⭐-方法-2：Chrome-Edge-浏览器加速插件（最推荐-🏆）"><a href="#⭐-方法-2：Chrome-Edge-浏览器加速插件（最推荐-🏆）" class="headerlink" title="⭐ 方法 2：Chrome&#x2F;Edge 浏览器加速插件（最推荐 🏆）"></a>⭐ 方法 2：Chrome&#x2F;Edge 浏览器加速插件（最推荐 🏆）</h2><p><strong>Fast-GitHub</strong> 是目前最强的浏览器加速插件，2026 年仍在活跃维护：</p>
+<ul>
+<li><p>📦 安装方式：</p>
+<ol>
+<li>从 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://gitcode.com/gh_mirrors/fa/Fast-GitHub">GitCode 仓库</a> 克隆源码</li>
+<li>浏览器打开 <code>chrome://extensions/</code> → 开启<strong>开发者模式</strong></li>
+<li>点击「加载已解压的扩展程序」→ 选择 <code>fast_github/src</code> 目录</li>
+</ol>
+</li>
+<li><p>📊 实测效果（2026 年测试数据）：</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>加速前</th>
+<th>加速后</th>
+<th>提升倍数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>100MB 仓库克隆</td>
+<td>25-35 分钟</td>
+<td>1.5-3 分钟</td>
+<td><strong>15-25 倍</strong></td>
+</tr>
+<tr>
+<td>50MB Release 文件</td>
+<td>8-15 KB&#x2F;s</td>
+<td>800KB-5 MB&#x2F;s</td>
+<td><strong>50-300 倍</strong></td>
+</tr>
+<tr>
+<td>页面加载</td>
+<td>6-12 秒</td>
+<td>0.8-1.5 秒</td>
+<td><strong>8-15 倍</strong></td>
+</tr>
+</tbody></table>
+<p>✅ <strong>优点</strong>：智能路由 + 多线程下载 + 零配置，所有处理在本地完成，隐私安全<br>❌ <strong>缺点</strong>：仅支持 Chrome 88+ &#x2F; Edge 88+ &#x2F; Firefox 86+</p>
+<h2 id="⭐-方法-3：通过-Gitee（码云）中转（最稳定）"><a href="#⭐-方法-3：通过-Gitee（码云）中转（最稳定）" class="headerlink" title="⭐ 方法 3：通过 Gitee（码云）中转（最稳定）"></a>⭐ 方法 3：通过 Gitee（码云）中转（最稳定）</h2><p>利用 Gitee 的「从 GitHub 导入仓库」功能：</p>
+<ol>
+<li>访问 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://gitee.com/">gitee.com</a> 并登录</li>
+<li>顶部菜单 → <strong>「从 GitHub&#x2F;GitLab 导入仓库」</strong></li>
+<li>粘贴 GitHub 仓库地址 → 点击导入</li>
+<li>等待同步完成后，在 Gitee 上浏览&#x2F;下载&#x2F;克隆</li>
+</ol>
+<p>✅ <strong>优点</strong>：速度极快（国内服务器），支持持续同步刷新<br>❌ <strong>缺点</strong>：需要手动刷新同步，非实时</p>
+<h2 id="方法-4：GitHub-文件加速（Cloudflare-Workers）"><a href="#方法-4：GitHub-文件加速（Cloudflare-Workers）" class="headerlink" title="方法 4：GitHub 文件加速（Cloudflare Workers）"></a>方法 4：GitHub 文件加速（Cloudflare Workers）</h2><p>利用 Cloudflare Workers 对 Release、Archive、项目文件进行 CDN 加速：</p>
+<table>
+<thead>
+<tr>
+<th>加速站</th>
+<th>地址</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ghproxy</td>
+<td><code>https://mirror.ghproxy.com/</code></td>
+</tr>
+<tr>
+<td>99988866</td>
+<td><code>https://gh.api.99988866.xyz</code></td>
+</tr>
+<tr>
+<td>gitwarp</td>
+<td><code>https://www.gitwarp.com/</code></td>
+</tr>
+</tbody></table>
+<p>也可自行部署开源项目 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/hunshnet/gh-proxy">gh-proxy</a></p>
+<p>✅ <strong>优点</strong>：无需安装，粘贴链接即可加速下载 Release 文件</p>
+<h2 id="方法-5：GitHub-加速下载工具"><a href="#方法-5：GitHub-加速下载工具" class="headerlink" title="方法 5：GitHub 加速下载工具"></a>方法 5：GitHub 加速下载工具</h2><p>将 GitHub 地址粘贴到工具中，即可代理加速下载：</p>
+<table>
+<thead>
+<tr>
+<th>工具</th>
+<th>地址</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Toolwa</td>
+<td><code>http://toolwa.com/github/</code></td>
+</tr>
+<tr>
+<td>GitWarp</td>
+<td><code>https://www.gitwarp.com/</code></td>
+</tr>
+<tr>
+<td>ZHLH6 加速</td>
+<td><code>https://github.zhlh6.cn</code>（输入仓库地址生成加速 git&#x2F;ssh 链接）</td>
+</tr>
+</tbody></table>
+<p>✅ <strong>优点</strong>：一键操作，适合临时下载</p>
+<h2 id="方法-6：GitHub-Raw-加速"><a href="#方法-6：GitHub-Raw-加速" class="headerlink" title="方法 6：GitHub Raw 加速"></a>方法 6：GitHub Raw 加速</h2><p>GitHub Raw 文件的真实域名是 <code>raw.githubusercontent.com</code>，很多加速方案对此域名无效。</p>
+<p><strong>解决方案</strong>：将域名替换为 Static CDN 反代：</p>
+<pre class="line-numbers language-none"><code class="language-none"># 替换前
+https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;用户名&#x2F;仓库&#x2F;分支&#x2F;文件
+
+# 替换后
+https:&#x2F;&#x2F;raw.staticdn.net&#x2F;用户名&#x2F;仓库&#x2F;分支&#x2F;文件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>✅ <strong>优点</strong>：简单有效，适合加载原始代码文件<br>❌ <strong>缺点</strong>：仅对 Raw 文件有效</p>
+<h2 id="方法-7：GitHub-Jsdelivr-CDN（静态文件专用）"><a href="#方法-7：GitHub-Jsdelivr-CDN（静态文件专用）" class="headerlink" title="方法 7：GitHub + Jsdelivr CDN（静态文件专用）"></a>方法 7：GitHub + Jsdelivr CDN（静态文件专用）</h2><p>Jsdelivr 是免费 CDN，可作为 GitHub 静态文件的加速镜像：</p>
+<pre class="line-numbers language-none"><code class="language-none">https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;用户名&#x2F;仓库名@分支&#x2F;文件路径<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<table>
+<thead>
+<tr>
+<th>CDN 节点</th>
+<th>延迟</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>https://gcore.jsdelivr.net</code></td>
+<td>~180ms</td>
+<td>海外服务器，有缓存</td>
+</tr>
+<tr>
+<td><code>https://cdn.jsdelivr.net</code></td>
+<td>~180ms</td>
+<td>海外服务器，有缓存</td>
+</tr>
+<tr>
+<td><code>https://jsd.onmicrosoft.cn</code></td>
+<td>~15ms</td>
+<td>国内节点，无缓存</td>
+</tr>
+<tr>
+<td><code>https://jsd.cdn.zzko.cn</code></td>
+<td>~30ms</td>
+<td>国内节点，无缓存</td>
+</tr>
+</tbody></table>
+<p>✅ <strong>优点</strong>：可直接在浏览器访问文件<br>❌ <strong>缺点</strong>：<strong>无法获取 exe&#x2F;dmg 等 Release 附件</strong>，仅适合静态文件</p>
+<h2 id="方法-8：修改-HOSTS-文件（无需安装软件）"><a href="#方法-8：修改-HOSTS-文件（无需安装软件）" class="headerlink" title="方法 8：修改 HOSTS 文件（无需安装软件）"></a>方法 8：修改 HOSTS 文件（无需安装软件）</h2><p>手动将 GitHub 域名绑定到最快的 CDN IP：</p>
+<h3 id="📌-操作步骤："><a href="#📌-操作步骤：" class="headerlink" title="📌 操作步骤："></a>📌 操作步骤：</h3><p><strong>第一步：获取最快 IP（以 2026 年数据为例）</strong></p>
+<table>
+<thead>
+<tr>
+<th>域名</th>
+<th>推荐 IP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>github.global.ssl.fastly.net</code></td>
+<td><code>199.232.69.194</code></td>
+</tr>
+<tr>
+<td><code>github.com</code></td>
+<td><code>140.82.114.4</code></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>💡 IP 会变化，建议访问 <a target="_blank" rel="noopener external nofollow noreferrer" href="http://github.com.ipaddress.com/#ipinfo">ipaddress.com</a> 获取最新值</p>
+</blockquote>
+<p><strong>第二步：修改 hosts 文件</strong></p>
+<table>
+<thead>
+<tr>
+<th>系统</th>
+<th>路径</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Windows</td>
+<td><code>C:\Windows\System32\drivers\etc\hosts</code></td>
+</tr>
+<tr>
+<td>Mac</td>
+<td><code>/etc/hosts</code></td>
+</tr>
+<tr>
+<td>Linux</td>
+<td><code>/etc/hosts</code></td>
+</tr>
+</tbody></table>
+<p><strong>第三步：添加以下内容（Windows 需先获取写入权限）</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">199.232.69.194 github.global.ssl.fastly.net
+140.82.114.4    github.com<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p><strong>第四步：刷新 DNS 缓存</strong></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># Windows</span>
+ipconfig /flushdns
+
+<span class="token comment"># Mac</span>
+<span class="token function">sudo</span> <span class="token function">killall</span> <span class="token parameter variable">-HUP</span> mDNSResponder
+
+<span class="token comment"># Linux</span>
+<span class="token function">sudo</span> nscd restart<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>✅ <strong>优点</strong>：一劳永逸，不依赖第三方服务<br>❌ <strong>缺点</strong>：IP 经常变化需手动更新，可能遇到 SSL 证书问题</p>
+<h2 id="方法-9：使用-VPN-代理（最彻底）"><a href="#方法-9：使用-VPN-代理（最彻底）" class="headerlink" title="方法 9：使用 VPN &#x2F; 代理（最彻底）"></a>方法 9：使用 VPN &#x2F; 代理（最彻底）</h2><p>通过代理工具（如 Clash、V2Ray、Shadowsocks 等）将流量转发到境外服务器，直接访问 GitHub 原始地址。</p>
+<p>✅ <strong>优点</strong>：效果最好，能访问所有功能（包括登录、PR、Issues）<br>❌ <strong>缺点</strong>：需要付费，有一定法律风险</p>
+<h2 id="🎯-总结：我该选哪个？"><a href="#🎯-总结：我该选哪个？" class="headerlink" title="🎯 总结：我该选哪个？"></a>🎯 总结：我该选哪个？</h2><table>
+<thead>
+<tr>
+<th>需求</th>
+<th>推荐方案</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>🖥️ 日常浏览 + 克隆代码</td>
+<td><strong>方法 2（Fast-GitHub 插件）</strong> ⭐⭐⭐</td>
+</tr>
+<tr>
+<td>📦 下载 Release 文件</td>
+<td><strong>方法 4（ghproxy）+ 方法 3（Gitee）</strong></td>
+</tr>
+<tr>
+<td>🔧 临时下载单个文件</td>
+<td><strong>方法 5（GitWarp &#x2F; Toolwa）</strong></td>
+</tr>
+<tr>
+<td>📄 加速 Raw 文件</td>
+<td><strong>方法 6（raw.staticdn.net）</strong></td>
+</tr>
+<tr>
+<td>🖥️ 不想装任何东西</td>
+<td><strong>方法 1（镜像站）+ 方法 8（hosts）</strong></td>
+</tr>
+<tr>
+<td>🚀 追求最快最稳</td>
+<td><strong>方法 9（VPN）</strong></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>💡 <strong>最佳组合</strong>：安装 <strong>Fast-GitHub 插件</strong> + 备用 <strong>Gitee 中转</strong>，基本可以覆盖 99% 的使用场景！</p>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://zhjbbt.eu.org">秋天科技</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://zhjbbt.eu.org/posts/e51d0735.html">https://zhjbbt.eu.org/posts/e51d0735.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://zhjbbt.eu.org" target="_blank">秋天科技の博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/github/">github</a></div><div class="post-share"><div class="social-share" data-image="/img/cover/bg1.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://unpkg.com/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://unpkg.com/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://i.cetsteam.com/imgs/2025/12/24/f28263da46412714.jpg" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.cetsteam.com/imgs/2025/12/24/f28263da46412714.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="https://i.cetsteam.com/imgs/2025/12/24/a5f4558f9a50f2a0.jpg" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://i.cetsteam.com/imgs/2025/12/24/a5f4558f9a50f2a0.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/posts/f6662e0c.html" title="宁德时代一线打工避坑语录"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/cover/bg7.jpeg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">宁德时代一线打工避坑语录</div></div><div class="info-2"><div class="info-item-1">在宁德时代干了2年，从新人熬成老油条，总结了一些亲身经历的避坑经验”1️⃣ 别信招聘说辞招聘时说的”轻松不累”、”月入过万”全是骗人的。好岗位基本轮不到新人，进来先把你安排到最苦最累的岗位，干一段时间再说。 2️⃣ 别太老实老实人永远吃亏。该争取的要争取，该拒绝的别不好意思。你越好说话，活越往你身上堆。 3️⃣ 别跟领导硬刚说话留三分，不然容易被穿小鞋。领导给你记一笔，后面有的是办法整你。 4️⃣ 别跟同事掏心掏肺厂里没有真心只有利益。今天好兄弟，明天就可能背后捅刀。你说的每一句话，都可能变成别人的把柄。 5️⃣ 别得罪任何人得罪一个人就是得罪一个圈子。圈子里可能就有领导，后期会被使绊子。表面上过得去就行，别较真。 6️⃣ 别长期干工厂是青春饭，熬久了身体垮、没前途。攒点钱赶紧走，别把最好的青春全耗在这。 7️⃣ 少说少做少错多说多做多错，不说不做不错。 这是工厂生存的铁律。安安静静干完活，拿钱走人，别给自己找麻烦。 📌 总结一句话工厂能挣钱，但挣的是辛苦钱、血汗钱。别把最好的青春全耗在这。🏭 如果觉得有用，记得点个 赞 和 在看 👇 </div></div></div></a><a class="pagination-related" href="/posts/5c2fafc7.html" title="第一篇文章"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/cover/bg9.jpeg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">第一篇文章</div></div><div class="info-2"><div class="info-item-1">        麦家一段很通透的话： “有福之人千人恨，无福之人恨千人，我不在意别人背后怎么说我。 我的人生如此宝贵，我在意的人喜欢我就够了，我没那么多人需要去满足。做自己就好。” 看到这段话，心里一下子松快了。 多少人活得太累，就是因为反着来的。 你过得好，就有人恨你。你升职了，恨你的人说你走关系。 你赚钱了，恨你的人说你不干净。你日子舒坦了，恨你的人说你运气好。 不是你做错了什么，是你活成了他们够不着的样子。 有福之人，注定被千人恨。这是代价，也是勋章。 反过来，没福气的人，看谁都不顺眼。 恨别人有钱，恨别人幸福，恨别人运气好。 恨了一圈，自己还是老样子。越恨越穷，越穷越恨。 我不在意别人背后怎么说我。这话说起来容易，做起来难。 谁不怕被人议论？谁不怕背后有人捅刀子？但你在意有用吗？ 嘴长在别人身上，你堵不住。你解释，人家说你心虚。你不理，人家说你默认。 不在意。不是听不见，是不往心里去。 别人的嘴，你管不了。你的心，你可以管。 你不接招，那些闲话就是一阵风，吹过就散了。 你接了招，就变成了心里的刺，扎自己一辈子。 你的人生，只有一次。每天24小时，过一秒少一秒。你把时间花在...</div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8F%90%E9%AB%98%E5%9B%BD%E5%86%85%E8%AE%BF%E9%97%AE-GitHub-%E9%80%9F%E5%BA%A6%E7%9A%84-9-%E7%A7%8D%E6%96%B9%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">提高国内访问 GitHub 速度的 9 种方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%AD%90-%E6%96%B9%E6%B3%95-1%EF%BC%9AGitHub-%E9%95%9C%E5%83%8F%E8%AE%BF%E9%97%AE%EF%BC%88%E6%9C%80%E7%AE%80%E5%8D%95%EF%BC%89"><span class="toc-number">1.1.</span> <span class="toc-text">⭐ 方法 1：GitHub 镜像访问（最简单）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%AD%90-%E6%96%B9%E6%B3%95-2%EF%BC%9AChrome-Edge-%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8A%A0%E9%80%9F%E6%8F%92%E4%BB%B6%EF%BC%88%E6%9C%80%E6%8E%A8%E8%8D%90-%F0%9F%8F%86%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">⭐ 方法 2：Chrome&#x2F;Edge 浏览器加速插件（最推荐 🏆）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%AD%90-%E6%96%B9%E6%B3%95-3%EF%BC%9A%E9%80%9A%E8%BF%87-Gitee%EF%BC%88%E7%A0%81%E4%BA%91%EF%BC%89%E4%B8%AD%E8%BD%AC%EF%BC%88%E6%9C%80%E7%A8%B3%E5%AE%9A%EF%BC%89"><span class="toc-number">1.3.</span> <span class="toc-text">⭐ 方法 3：通过 Gitee（码云）中转（最稳定）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95-4%EF%BC%9AGitHub-%E6%96%87%E4%BB%B6%E5%8A%A0%E9%80%9F%EF%BC%88Cloudflare-Workers%EF%BC%89"><span class="toc-number">1.4.</span> <span class="toc-text">方法 4：GitHub 文件加速（Cloudflare Workers）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95-5%EF%BC%9AGitHub-%E5%8A%A0%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7"><span class="toc-number">1.5.</span> <span class="toc-text">方法 5：GitHub 加速下载工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95-6%EF%BC%9AGitHub-Raw-%E5%8A%A0%E9%80%9F"><span class="toc-number">1.6.</span> <span class="toc-text">方法 6：GitHub Raw 加速</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95-7%EF%BC%9AGitHub-Jsdelivr-CDN%EF%BC%88%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6%E4%B8%93%E7%94%A8%EF%BC%89"><span class="toc-number">1.7.</span> <span class="toc-text">方法 7：GitHub + Jsdelivr CDN（静态文件专用）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95-8%EF%BC%9A%E4%BF%AE%E6%94%B9-HOSTS-%E6%96%87%E4%BB%B6%EF%BC%88%E6%97%A0%E9%9C%80%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%EF%BC%89"><span class="toc-number">1.8.</span> <span class="toc-text">方法 8：修改 HOSTS 文件（无需安装软件）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%93%8C-%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4%EF%BC%9A"><span class="toc-number">1.8.1.</span> <span class="toc-text">📌 操作步骤：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95-9%EF%BC%9A%E4%BD%BF%E7%94%A8-VPN-%E4%BB%A3%E7%90%86%EF%BC%88%E6%9C%80%E5%BD%BB%E5%BA%95%EF%BC%89"><span class="toc-number">1.9.</span> <span class="toc-text">方法 9：使用 VPN &#x2F; 代理（最彻底）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%8E%AF-%E6%80%BB%E7%BB%93%EF%BC%9A%E6%88%91%E8%AF%A5%E9%80%89%E5%93%AA%E4%B8%AA%EF%BC%9F"><span class="toc-number">1.10.</span> <span class="toc-text">🎯 总结：我该选哪个？</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By 秋天科技</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo 8.1.2</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div><div class="github-badge"><a style="color: #fff" rel="license external nofollow noreferrer" href="https://hexo.io/" target="_blank" title="由 Hexo 强力驱动"><span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hexo</span></a><a style="color: #fff" rel="license external nofollow noreferrer" href="https://gitee.com/" target="_blank" title="静态网页托管于 GitHub Pages 和 Coding Pages 和 Gitee Pages"><span class="badge-subject">Hosted</span><span class="badge-value bg-brightgreen">GitHub & Coding & Gitee</span></a><a style="color: #fff" rel="license external nofollow noreferrer" href="https://unpkg.com/" target="_blank" title="unpkg 提供 CDN 加速服务"><span class="badge-subject">CDN</span><span class="badge-value bg-blue">unpkg</span></a><a style="color: #fff" rel="license external nofollow noreferrer" href="https://jerryc.me" target="_blank" title="站点使用 butterfly主题"><span class="badge-subject">Theme</span><span class="badge-value bg-blue">butterfly</span></a><a style="color: #fff" rel="license external nofollow noreferrer" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="本站点采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可"><span class="badge-subject"><i class="fa fa-copyright"></i></span><span class="badge-value bg-lightgrey">bY-NC-SA 4.0</span></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><script src="/js/tw_cn.js?v=5.5.4"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.2.0/instantpage.min.js" type="module"></script><script src="https://unpkg.com/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><script src="https://unpkg.com/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const initValine = (el, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyValine = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    const valineConfig = {
+      el: '#vcomment',
+      appId: '3VNvFw716WKAVV2B4LaWR4fA-gzGzoHsz',
+      appKey: 'ICyIVPVkMIdHlyXXGsguctg4',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      visitor: false,
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || window.location.pathname
+    }
+
+    new Valine(valineConfig)
+  }
+
+  const loadValine = async (el, path) => {
+    if (typeof Valine === 'function') {
+      initValine(el, path)
+    } else {
+      await btf.getScript('https://unpkg.com/valine@1.5.3/dist/Valine.min.js')
+      initValine(el, path)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Valine' === 'Valine'
+      ? window.shuoshuoComment = { loadComment: loadValine }
+      : window.loadOtherComment = loadValine
+    return
+  }
+
+  if ('Valine' === 'Valine' || !false) {
+    if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script></div><script src="/js/VolantisTags.js"></script><script src="/js/volantis.js"></script><script src="https://unpkg.com/butterfly-extsrc@1.1.6/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.4"></script></div></div></body></html>

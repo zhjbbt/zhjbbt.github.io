@@ -83,6 +83,24 @@
   </url>
   
   <url>
+    <loc>https://zhjbbt.eu.org/movies/index.html</loc>
+    
+    <lastmod>2026-08-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhjbbt.eu.org/music/index.html</loc>
+    
+    <lastmod>2026-08-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zhjbbt.eu.org/posts/5c2fafc7.html</loc>
     
     <lastmod>2026-05-11</lastmod>

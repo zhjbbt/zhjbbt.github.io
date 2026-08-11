@@ -100,7 +100,7 @@
         var opacity = 0.35 + scale * 0.65
 
         item.el.style.transform =
-          'translate3d(' + rx + 'px,' + ry + 'px,' + rz2 + 'px) scale(' + scale + ')'
+          'translate3d(' + (cx + rx) + 'px,' + (cy + ry) + 'px,' + rz2 + 'px) scale(' + scale + ')'
         item.el.style.opacity = opacity
         item.el.style.zIndex = Math.round(scale * 100)
 

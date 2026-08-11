@@ -14,6 +14,8 @@
     container.style.height = '360px'
     container.style.overflow = 'visible'
     container.style.perspective = '800px'
+    container.style.marginLeft = 'auto'
+    container.style.marginRight = 'auto'
 
     var radius = Math.min(container.offsetWidth, container.offsetHeight) * 0.38
     var cx = container.offsetWidth / 2

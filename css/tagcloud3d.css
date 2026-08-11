@@ -2,6 +2,13 @@
 .tag-cloud-list {
   -webkit-user-select: none;
   user-select: none;
+  /* 居中：在主内容区内水平居中 */
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+  min-height: 360px;
 }
 
 .tag-cloud-list a {

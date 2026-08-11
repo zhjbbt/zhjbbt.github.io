@@ -1,8 +1,9 @@
 /* 3D 标签云容器增强 */
+
+/* 标签页大标签云 */
 .tag-cloud-list {
   -webkit-user-select: none;
   user-select: none;
-  /* 居中：在主内容区内水平居中 */
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
@@ -22,4 +23,24 @@
   z-index: 200 !important;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25) !important;
   transform: translateZ(60px) scale(1.25) !important;
+}
+
+/* 侧栏小标签云 */
+.card-tag-cloud {
+  -webkit-user-select: none;
+  user-select: none;
+  position: relative !important;
+  min-height: 220px !important;
+}
+
+.card-tag-cloud a {
+  background: linear-gradient(135deg, #667eea, #764ba2) !important;
+  color: #fff !important;
+  border: none !important;
+  transition: transform 0.15s ease-out, opacity 0.15s ease-out, box-shadow 0.3s ease !important;
+}
+
+.card-tag-cloud a:hover {
+  z-index: 200 !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2) !important;
 }

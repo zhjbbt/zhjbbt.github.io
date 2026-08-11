@@ -1,24 +1,20 @@
 // 3D 球形标签云 —— 鼠标悬停跟随旋转
-// 自动查找 .tag-cloud-list 容器内的 <a> 标签，转换为 3D 球面分布
+// 同时作用于 .tag-cloud-list（标签页）和 .card-tag-cloud（侧栏）
 ;(function () {
-  function initTagCloud() {
-    var container = document.querySelector('.tag-cloud-list')
-    if (!container) return
-
+  function createTagCloud(container, opts) {
     var tags = container.querySelectorAll('a')
     if (tags.length === 0) return
 
-    // 读取容器已有样式（Butterfly 可能已设 text-center 等）
+    // 容器基础样式
     container.style.position = 'relative'
     container.style.width = '100%'
-    container.style.height = '360px'
+    container.style.height = (opts.height || 360) + 'px'
     container.style.overflow = 'visible'
     container.style.perspective = '800px'
     container.style.marginLeft = 'auto'
     container.style.marginRight = 'auto'
 
-    // 半径用固定值，避免 offsetWidth 测量时机不准导致偏移
-    var radius = 140
+    var radius = opts.radius || 140
 
     // 黄金螺旋均匀分布球面坐标
     var tagData = []
@@ -30,12 +26,11 @@
         el: tags[i],
         x: radius * Math.cos(theta) * Math.sin(phi),
         y: radius * Math.sin(theta) * Math.sin(phi),
-        z: radius * Math.cos(phi),
-        baseColor: tags[i].style.backgroundColor || ''
+        z: radius * Math.cos(phi)
       })
     }
 
-    // 每个标签的初始样式：定位到容器 50% 处，靠 transform 居中自身
+    // 每个标签初始样式：定位到容器 50% 处，靠 transform 居中自身
     tagData.forEach(function (item) {
       item.el.style.position = 'absolute'
       item.el.style.left = '50%'
@@ -43,12 +38,17 @@
       item.el.style.whiteSpace = 'nowrap'
       item.el.style.cursor = 'pointer'
       item.el.style.transition = 'transform 0.15s ease-out, opacity 0.15s ease-out'
-      item.el.style.padding = '4px 12px'
+      item.el.style.padding = (opts.padding || '4px 12px')
       item.el.style.borderRadius = '16px'
       item.el.style.textDecoration = 'none'
       item.el.style.fontWeight = '500'
       item.el.style.display = 'inline-block'
       item.el.style.boxShadow = '0 2px 8px rgba(0,0,0,0.12)'
+      if (opts.bgColor) {
+        item.el.style.background = opts.bgColor
+        item.el.style.color = '#fff'
+        item.el.style.border = 'none'
+      }
     })
 
     // 旋转状态
@@ -56,15 +56,14 @@
     var angleY = 0
     var targetAngleX = 0
     var targetAngleY = 0
-    var autoSpeedX = 0.006
-    var autoSpeedY = 0.008
+    var autoSpeedX = opts.speedX || 0.006
+    var autoSpeedY = opts.speedY || 0.008
     var isHovering = false
     var mouseX = 0
     var mouseY = 0
 
     // 渲染一帧
     function render() {
-      // 自动旋转 + 鼠标影响
       if (!isHovering) {
         targetAngleX += autoSpeedX
         targetAngleY += autoSpeedY
@@ -82,13 +81,6 @@
       var sinY = Math.sin(angleY)
 
       tagData.forEach(function (item) {
-        // 绕 Y 轴再绕 X 轴旋转
-        var x1 = item.x * cosY - item.z * sinY
-        var z1 = item.x * sinY + item.z * cosY
-        var y1 = item.y * cosX - z1 * sinX
-        var z2 = item.y * cosX + z1 * sinX // 修正：y 不变，z' = y*sin + z*cos
-
-        // 正确的 3D 旋转公式
         var rx = item.x * cosY + item.z * sinY
         var rz = -item.x * sinY + item.z * cosY
         var ry = item.y * cosX - rz * sinX
@@ -103,8 +95,7 @@
         item.el.style.opacity = opacity
         item.el.style.zIndex = Math.round(scale * 100)
 
-        // 前面的标签更亮、更大字体
-        var fontSizeBase = 14
+        var fontSizeBase = opts.fontSizeBase || 14
         item.el.style.fontSize = fontSizeBase * (0.75 + scale * 0.5) + 'px'
       })
 
@@ -134,12 +125,22 @@
     container.addEventListener('touchend', function () { isHovering = false })
   }
 
+  function initAll() {
+    // 标签页：大球体
+    var pageTags = document.querySelector('.tag-cloud-list')
+    if (pageTags) createTagCloud(pageTags, { radius: 140, height: 360, fontSizeBase: 14, padding: '4px 12px' })
+
+    // 侧栏标签：小球体，紧凑样式
+    var sideTags = document.querySelector('.card-tag-cloud')
+    if (sideTags) createTagCloud(sideTags, { radius: 80, height: 220, fontSizeBase: 11, padding: '2px 8px', bgColor: 'linear-gradient(135deg, #667eea, #764ba2)', speedX: 0.008, speedY: 0.01 })
+  }
+
   // 页面加载后初始化（兼容 PJAX）
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initTagCloud)
+    document.addEventListener('DOMContentLoaded', initAll)
   } else {
-    initTagCloud()
+    initAll()
   }
   // PJAX 切换时重新初始化
-  document.addEventListener('pjax:complete', initTagCloud)
+  document.addEventListener('pjax:complete', initAll)
 })()

@@ -16,6 +16,13 @@
 
     var radius = opts.radius || 140
 
+    // 彩色调色板：每个标签分配不同颜色
+    var palette = opts.palette || [
+      '#667eea', '#764ba2', '#36d1dc', '#5b86e5', '#f093fb',
+      '#f5576c', '#4facfe', '#00c6fb', '#fa709a', '#fee140',
+      '#30cfd0', '#a18cd1', '#ff9a9e', '#ffecd2', '#43e97b'
+    ]
+
     // 黄金螺旋均匀分布球面坐标
     var tagData = []
     for (var i = 0; i < tags.length; i++) {
@@ -30,8 +37,11 @@
       })
     }
 
+    // 当前悬停的标签（用于隐藏其他标签）
+    var hoveredTag = null
+
     // 每个标签初始样式：定位到容器 50% 处，靠 transform 居中自身
-    tagData.forEach(function (item) {
+    tagData.forEach(function (item, idx) {
       item.el.style.position = 'absolute'
       item.el.style.left = '50%'
       item.el.style.top = '50%'
@@ -44,11 +54,16 @@
       item.el.style.fontWeight = '500'
       item.el.style.display = 'inline-block'
       item.el.style.boxShadow = '0 2px 8px rgba(0,0,0,0.12)'
-      if (opts.bgColor) {
-        item.el.style.background = opts.bgColor
-        item.el.style.color = '#fff'
-        item.el.style.border = 'none'
-      }
+      // 分配调色板颜色（important 覆盖主题默认样式）
+      item.el.style.setProperty('background', palette[idx % palette.length], 'important')
+      item.el.style.color = '#fff'
+      item.el.style.border = 'none'
+
+      // 悬停某标签时隐藏其他标签
+      item.el.addEventListener('mouseenter', function () { hoveredTag = item })
+      item.el.addEventListener('mouseleave', function () {
+        if (hoveredTag === item) hoveredTag = null
+      })
     })
 
     // 旋转状态
@@ -90,10 +105,16 @@
         scale = Math.max(0.4, Math.min(1.4, scale))
         var opacity = 0.35 + scale * 0.65
 
+        // 悬停时让其他标签变暗/隐藏
+        if (hoveredTag && hoveredTag !== item) {
+          opacity = 0.06
+          scale = Math.max(0.4, scale)
+        }
+
         item.el.style.transform =
           'translate(-50%, -50%) translate3d(' + rx + 'px,' + ry + 'px,' + rz2 + 'px) scale(' + scale + ')'
         item.el.style.opacity = opacity
-        item.el.style.zIndex = Math.round(scale * 100)
+        item.el.style.zIndex = hoveredTag === item ? 300 : Math.round(scale * 100)
 
         var fontSizeBase = opts.fontSizeBase || 14
         item.el.style.fontSize = fontSizeBase * (0.75 + scale * 0.5) + 'px'

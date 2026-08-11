@@ -13,7 +13,6 @@
 }
 
 .tag-cloud-list a {
-  background: linear-gradient(135deg, var(--tag-bg1, #667eea), var(--tag-bg2, #764ba2)) !important;
   color: #fff !important;
   border: none !important;
   transition: transform 0.15s ease-out, opacity 0.15s ease-out, box-shadow 0.3s ease !important;
@@ -34,7 +33,6 @@
 }
 
 .card-tag-cloud a {
-  background: linear-gradient(135deg, #667eea, #764ba2) !important;
   color: #fff !important;
   border: none !important;
   transition: transform 0.15s ease-out, opacity 0.15s ease-out, box-shadow 0.3s ease !important;

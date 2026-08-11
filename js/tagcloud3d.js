@@ -17,9 +17,8 @@
     container.style.marginLeft = 'auto'
     container.style.marginRight = 'auto'
 
-    var radius = Math.min(container.offsetWidth, container.offsetHeight) * 0.38
-    var cx = container.offsetWidth / 2
-    var cy = container.offsetHeight / 2
+    // 半径用固定值，避免 offsetWidth 测量时机不准导致偏移
+    var radius = 140
 
     // 黄金螺旋均匀分布球面坐标
     var tagData = []
@@ -36,11 +35,11 @@
       })
     }
 
-    // 每个标签的初始样式
+    // 每个标签的初始样式：定位到容器 50% 处，靠 transform 居中自身
     tagData.forEach(function (item) {
       item.el.style.position = 'absolute'
-      item.el.style.left = '0'
-      item.el.style.top = '0'
+      item.el.style.left = '50%'
+      item.el.style.top = '50%'
       item.el.style.whiteSpace = 'nowrap'
       item.el.style.cursor = 'pointer'
       item.el.style.transition = 'transform 0.15s ease-out, opacity 0.15s ease-out'
@@ -100,7 +99,7 @@
         var opacity = 0.35 + scale * 0.65
 
         item.el.style.transform =
-          'translate3d(' + (cx + rx) + 'px,' + (cy + ry) + 'px,' + rz2 + 'px) scale(' + scale + ')'
+          'translate(-50%, -50%) translate3d(' + rx + 'px,' + ry + 'px,' + rz2 + 'px) scale(' + scale + ')'
         item.el.style.opacity = opacity
         item.el.style.zIndex = Math.round(scale * 100)
 

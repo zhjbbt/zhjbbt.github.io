@@ -250,7 +250,7 @@
 
 /* 头像点击特效 */
 .card-info-avatar:hover {
-  background: url(https://gitee.com/lovelijunyi/images/raw/master/20200530181856.gif);
+  background: url(/img/avatar-hover.gif);
 }
 
 /* 标签自定义颜色 */

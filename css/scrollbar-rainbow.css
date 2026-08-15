@@ -30,3 +30,9 @@
   background-position: center !important;
   background-repeat: no-repeat !important;
 }
+
+/* ===== 抵消 VolantisTags.css 的副作用 ===== */
+/* 其 .layout_page{opacity:.9} 会让全站内容轻微半透明(发虚)，此处还原为不透明 */
+.layout_page {
+  opacity: 1 !important;
+}

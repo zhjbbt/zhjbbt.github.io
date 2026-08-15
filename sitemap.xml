@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://zhjbbt.eu.org/movies/index.html</loc>
+    <loc>https://zhjbbt.eu.org/music/index.html</loc>
     
     <lastmod>2026-08-15</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://zhjbbt.eu.org/music/index.html</loc>
+    <loc>https://zhjbbt.eu.org/movies/index.html</loc>
     
     <lastmod>2026-08-15</lastmod>
     
@@ -184,6 +184,20 @@
   </url>
   
   <url>
+    <loc>https://zhjbbt.eu.org/tags/%E4%BC%91%E6%81%AF/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhjbbt.eu.org/tags/%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://zhjbbt.eu.org/tags/%E5%AE%81%E5%BE%B7%E6%97%B6%E4%BB%A3/</loc>
     <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -199,20 +213,6 @@
   
   <url>
     <loc>https://zhjbbt.eu.org/tags/github/</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhjbbt.eu.org/tags/%E4%BC%91%E6%81%AF/</loc>
-    <lastmod>2026-08-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhjbbt.eu.org/tags/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -242,14 +242,14 @@
   </url>
   
   <url>
-    <loc>https://zhjbbt.eu.org/categories/%E7%94%9F%E6%B4%BB/</loc>
+    <loc>https://zhjbbt.eu.org/categories/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://zhjbbt.eu.org/categories/%E6%B5%8B%E8%AF%95/</loc>
+    <loc>https://zhjbbt.eu.org/categories/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

@@ -3,8 +3,6 @@ Allow: /
 Allow: /archives/
 Allow: /categories/
 Allow: /about/
-Disallow: /js/
-Disallow: /css/
 Disallow: /fonts/
 Disallow: /vendors/
 Sitemap: https://zhjbbt.eu.org/sitemap.xml

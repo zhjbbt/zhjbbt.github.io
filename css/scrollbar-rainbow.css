@@ -25,3 +25,13 @@
 .layout_page {
   opacity: 1 !important;
 }
+
+/* ===== footer：透明以透出全站 body 背景图(index_bg.jpg)，消除主题默认蓝底(#49b1f5) ===== */
+/* footer 文字为近白色(#eee)，叠加半透明暗层保证在照片背景上可读 */
+#footer {
+  background-color: transparent !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}

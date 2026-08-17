@@ -1,4 +1,4 @@
-/* 彩虹渐变滚动条 + 抵消 VolantisTags 副作用（自定义，不影响主题源码） */
+/* 彩虹渐变滚动条 + footer banner 背景（自定义，不影响主题源码） */
 
 /* ===== 滚动条：彩虹渐变（Chrome / Edge / Safari 等 webkit 内核） ===== */
 *::-webkit-scrollbar-thumb {
@@ -20,18 +20,19 @@
   scrollbar-color: #ff9a9e transparent !important;
 }
 
+/* ===== footer：用 banner 图片背景覆盖 Butterfly 默认蓝(#49b1f5) ===== */
+/* 叠加半透明暗层，保证浅灰文字在亮图上仍可读 */
+#footer {
+  background-color: transparent !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)),
+    url(/img/banner/4.webp) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
 /* ===== 抵消 VolantisTags.css 的副作用 ===== */
 /* 其 .layout_page{opacity:.9} 会让全站内容轻微半透明(发虚)，此处还原为不透明 */
 .layout_page {
   opacity: 1 !important;
-}
-
-/* ===== footer：透明以透出全站 body 背景图(index_bg.jpg)，消除主题默认蓝底(#49b1f5) ===== */
-/* footer 文字为近白色(#eee)，叠加半透明暗层保证在照片背景上可读 */
-#footer {
-  background-color: transparent !important;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)) !important;
-  background-size: cover !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
 }

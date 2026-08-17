@@ -25,5 +25,5 @@
   }
 
   update();
-  setInterval(update, 1000);
+  setInterval(update, 60000);
 })();

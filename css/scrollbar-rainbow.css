@@ -25,7 +25,7 @@
 #footer {
   background-color: transparent !important;
   background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)),
-    url(/img/index_bg.jpg) !important;
+    url(/img/index_bg.webp) !important;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;

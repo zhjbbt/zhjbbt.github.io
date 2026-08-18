@@ -121,26 +121,6 @@ More info: Deployment
       </tags>
   </entry>
   <entry>
-    <title>休息的一天</title>
-    <url>/posts/xiuxi.html</url>
-    <content><![CDATA[休息的一天一个简化 Hexo 博客多语言生成和管理的插件
-测试2测试3图片引用
-
-七牛测试
-图2
-
-图三
-
-]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>休息</tag>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>宁德时代一线打工避坑语录</title>
     <url>/posts/f6662e0c.html</url>
     <content><![CDATA[在宁德时代干了2年，从新人熬成老油条，总结了一些亲身经历的避坑经验”1️⃣ 别信招聘说辞招聘时说的”轻松不累”、”月入过万”全是骗人的。好岗位基本轮不到新人，进来先把你安排到最苦最累的岗位，干一段时间再说。
@@ -478,6 +458,26 @@ sudo nscd restart
       </categories>
       <tags>
         <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>休息的一天</title>
+    <url>/posts/xiuxi.html</url>
+    <content><![CDATA[休息的一天一个简化 Hexo 博客多语言生成和管理的插件
+测试2测试3图片引用
+
+七牛测试
+图2
+
+图三
+
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>休息</tag>
+        <tag>测试</tag>
       </tags>
   </entry>
 </search>

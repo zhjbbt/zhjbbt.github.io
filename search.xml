@@ -143,6 +143,26 @@ More info: Deployment
       </tags>
   </entry>
   <entry>
+    <title>休息的一天</title>
+    <url>/posts/xiuxi.html</url>
+    <content><![CDATA[休息的一天一个简化 Hexo 博客多语言生成和管理的插件
+测试2测试3图片引用
+
+七牛测试
+图2
+
+图三
+
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>休息</tag>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>提高国内访问 github 速度的 9 种方法</title>
     <url>/posts/e51d0735.html</url>
     <content><![CDATA[提高国内访问 GitHub 速度的 9 种方法
@@ -458,26 +478,6 @@ sudo nscd restart
       </categories>
       <tags>
         <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>休息的一天</title>
-    <url>/posts/xiuxi.html</url>
-    <content><![CDATA[休息的一天一个简化 Hexo 博客多语言生成和管理的插件
-测试2测试3图片引用
-
-七牛测试
-图2
-
-图三
-
-]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>休息</tag>
-        <tag>测试</tag>
       </tags>
   </entry>
 </search>

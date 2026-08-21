@@ -1,0 +1,77 @@
+/* 文章阅读进度：右侧垂直进度条 + 右下角「阅读进度」按钮 */
+
+/* ===== 右侧垂直阅读进度条 ===== */
+.reading-progress-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 0%;
+  background: linear-gradient(
+    180deg,
+    #ff9a9e 0%,
+    #fad0c4 50%,
+    #ff9a9e 100%
+  );
+  border-radius: 0 0 2px 2px;
+  z-index: 9999;
+  transition: height 0.1s linear;
+}
+
+[data-theme="dark"] .reading-progress-bar {
+  background: linear-gradient(
+    180deg,
+    #ff6b6b 0%,
+    #feca57 50%,
+    #ff6b6b 100%
+  );
+}
+
+/* ===== 右下角「阅读进度」按钮 ===== */
+#reading-progress-btn {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  padding: 0 6px !important;
+  width: auto !important;
+  min-width: 35px;
+  height: 35px !important;
+  background-color: var(--btn-bg, #fff) !important;
+  color: var(--btn-color, #363636) !important;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1 !important;
+  white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#reading-progress-btn:hover {
+  background-color: var(--btn-hover-color, #ff9a9e) !important;
+  color: #fff !important;
+}
+
+#reading-progress-btn .rp-num {
+  margin-right: 1px;
+  font-variant-numeric: tabular-nums;
+}
+
+[data-theme="dark"] #reading-progress-btn {
+  background-color: var(--btn-bg, #1f1f1f) !important;
+  color: var(--btn-color, #cfd8e3) !important;
+}
+
+[data-theme="dark"] #reading-progress-btn:hover {
+  background-color: #ff6b6b !important;
+  color: #fff !important;
+}
+
+/* 小屏保持精简 */
+@media (max-width: 900px) {
+  .reading-progress-bar {
+    width: 3px;
+  }
+}

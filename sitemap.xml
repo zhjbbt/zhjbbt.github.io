@@ -20,6 +20,15 @@
   </url>
   
   <url>
+    <loc>https://zhjbbt.eu.org/music/index.html</loc>
+    
+    <lastmod>2026-08-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zhjbbt.eu.org/movies/index.html</loc>
     
     <lastmod>2026-08-23</lastmod>
@@ -29,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://zhjbbt.eu.org/music/index.html</loc>
+    <loc>https://zhjbbt.eu.org/daily-news/index.html</loc>
     
     <lastmod>2026-08-23</lastmod>
     
@@ -84,15 +93,6 @@
   
   <url>
     <loc>https://zhjbbt.eu.org/categories/index.html</loc>
-    
-    <lastmod>2026-08-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhjbbt.eu.org/daily-news/index.html</loc>
     
     <lastmod>2026-08-23</lastmod>
     

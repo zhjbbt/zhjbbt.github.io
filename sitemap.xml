@@ -20,6 +20,15 @@
   </url>
   
   <url>
+    <loc>https://zhjbbt.eu.org/music/index.html</loc>
+    
+    <lastmod>2026-08-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zhjbbt.eu.org/movies/index.html</loc>
     
     <lastmod>2026-08-24</lastmod>
@@ -29,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://zhjbbt.eu.org/music/index.html</loc>
+    <loc>https://zhjbbt.eu.org/daily-news/index.html</loc>
     
     <lastmod>2026-08-24</lastmod>
     
@@ -56,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://zhjbbt.eu.org/posts/e51d0735.html</loc>
+    <loc>https://zhjbbt.eu.org/posts/f6662e0c.html</loc>
     
     <lastmod>2026-08-24</lastmod>
     
@@ -65,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://zhjbbt.eu.org/posts/f6662e0c.html</loc>
+    <loc>https://zhjbbt.eu.org/posts/e51d0735.html</loc>
     
     <lastmod>2026-08-24</lastmod>
     
@@ -84,15 +93,6 @@
   
   <url>
     <loc>https://zhjbbt.eu.org/categories/index.html</loc>
-    
-    <lastmod>2026-08-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhjbbt.eu.org/daily-news/index.html</loc>
     
     <lastmod>2026-08-24</lastmod>
     
@@ -170,20 +170,6 @@
   </url>
   
   <url>
-    <loc>https://zhjbbt.eu.org/tags/%E4%BC%91%E6%81%AF/</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhjbbt.eu.org/tags/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2026-08-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://zhjbbt.eu.org/tags/%E5%85%A5%E9%97%A8/</loc>
     <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -198,7 +184,14 @@
   </url>
   
   <url>
-    <loc>https://zhjbbt.eu.org/tags/github/</loc>
+    <loc>https://zhjbbt.eu.org/tags/%E4%BC%91%E6%81%AF/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhjbbt.eu.org/tags/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -225,6 +218,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://zhjbbt.eu.org/tags/github/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -235,14 +235,14 @@
   </url>
   
   <url>
-    <loc>https://zhjbbt.eu.org/categories/%E6%B5%8B%E8%AF%95/</loc>
+    <loc>https://zhjbbt.eu.org/categories/Hexo/</loc>
     <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://zhjbbt.eu.org/categories/Hexo/</loc>
+    <loc>https://zhjbbt.eu.org/categories/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

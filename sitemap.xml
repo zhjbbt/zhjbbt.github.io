@@ -38,6 +38,15 @@
   </url>
   
   <url>
+    <loc>https://zhjbbt.eu.org/daily-news/index.html</loc>
+    
+    <lastmod>2026-08-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zhjbbt.eu.org/posts/56015.html</loc>
     
     <lastmod>2026-08-28</lastmod>
@@ -83,15 +92,6 @@
   </url>
   
   <url>
-    <loc>https://zhjbbt.eu.org/about/index.html</loc>
-    
-    <lastmod>2026-08-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://zhjbbt.eu.org/categories/index.html</loc>
     
     <lastmod>2026-08-28</lastmod>
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://zhjbbt.eu.org/daily-news/index.html</loc>
+    <loc>https://zhjbbt.eu.org/about/index.html</loc>
     
     <lastmod>2026-08-28</lastmod>
     

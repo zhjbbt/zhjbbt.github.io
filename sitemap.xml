@@ -38,6 +38,24 @@
   </url>
   
   <url>
+    <loc>https://zhjbbt.eu.org/daily-news/index.html</loc>
+    
+    <lastmod>2026-08-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zhjbbt.eu.org/posts/56015.html</loc>
+    
+    <lastmod>2026-08-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://zhjbbt.eu.org/posts/4a17b156.html</loc>
     
     <lastmod>2026-08-28</lastmod>
@@ -84,24 +102,6 @@
   
   <url>
     <loc>https://zhjbbt.eu.org/categories/index.html</loc>
-    
-    <lastmod>2026-08-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhjbbt.eu.org/daily-news/index.html</loc>
-    
-    <lastmod>2026-08-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://zhjbbt.eu.org/posts/56015.html</loc>
     
     <lastmod>2026-08-28</lastmod>
     
@@ -256,14 +256,14 @@
   </url>
   
   <url>
-    <loc>https://zhjbbt.eu.org/tags/%E9%9A%8F%E7%AC%94/</loc>
+    <loc>https://zhjbbt.eu.org/tags/github/</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://zhjbbt.eu.org/tags/github/</loc>
+    <loc>https://zhjbbt.eu.org/tags/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2026-08-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

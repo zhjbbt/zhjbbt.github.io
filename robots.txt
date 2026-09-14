@@ -1,4 +1,8 @@
 User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /about/
 Disallow: /fonts/
 Disallow: /vendors/
 Sitemap: https://zhjbbt.eu.org/sitemap.xml

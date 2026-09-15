@@ -104,6 +104,19 @@
   50.01%, 100% { opacity: 0; }
 }
 
+/* 打字结束：末尾字符持续跳动，强调「输出完成」 */
+.ai-summary-bounce {
+  display: inline-block;
+  animation: ai-bounce 0.55s ease-in-out infinite;
+  color: inherit;
+}
+
+@keyframes ai-bounce {
+  0%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-0.28em); }
+  60% { transform: translateY(0.06em); }
+}
+
 /* 底部信息行 */
 .ai-summary-footer {
   display: flex;
@@ -137,7 +150,8 @@
   .ai-summary-body { padding: 0.9rem 1rem; min-height: 7em; }
 }
 
-/* 尊重「减少动态效果」偏好：直接显示全文、隐藏光标 */
+/* 尊重「减少动态效果」偏好：直接显示全文、隐藏光标与跳动 */
 @media (prefers-reduced-motion: reduce) {
   .ai-summary-cursor { animation: none; display: none; }
+  .ai-summary-bounce { animation: none; }
 }

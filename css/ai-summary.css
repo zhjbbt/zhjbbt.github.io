@@ -104,17 +104,19 @@
   50.01%, 100% { opacity: 0; }
 }
 
-/* 打字结束：末尾字符持续跳动，强调「输出完成」 */
+/* 打字结束：末尾「—」符号持续上下弹跳，强调输出完成 */
 .ai-summary-bounce {
   display: inline-block;
-  animation: ai-bounce 0.55s ease-in-out infinite;
+  margin-left: 0.15em;
+  animation: ai-bounce 0.6s ease-in-out infinite;
   color: inherit;
 }
 
 @keyframes ai-bounce {
   0%, 100% { transform: translateY(0); }
-  30% { transform: translateY(-0.28em); }
-  60% { transform: translateY(0.06em); }
+  25% { transform: translateY(-0.42em); }
+  50% { transform: translateY(0); }
+  62% { transform: translateY(-0.12em); }
 }
 
 /* 底部信息行 */

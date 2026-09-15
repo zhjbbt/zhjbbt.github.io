@@ -3,7 +3,8 @@
  * 读取每张 .ai-summary-card 内 .ai-summary-text 的 data-text 属性，逐字播放。
  * - 默认保留 HTML 中的完整文本（SEO / 无 JS 降级可见）。
  * - 仅在用户未设置「减少动态效果」偏好时启用打字机，完成后光标停止闪烁。
- * - 打字速度随机（每字 45~115ms，遇标点额外停顿），结束时末尾字符跳动。
+ * - 打字速度随机（每字 45~115ms，遇标点额外停顿）。
+ * - 打字结束后，末尾追加一个「—」符号持续上下跳动（参考清羽 AI 摘要样式）。
  */
 (function () {
   'use strict';
@@ -12,29 +13,19 @@
   var MIN_DELAY = 45;
   var RAND_DELAY = 70;     // 实际间隔 = 45 + 0~70 => 45~115ms
   var PUNCT_PAUSE = 180;   // 标点后额外停顿
-  var PUNCT_RE = /[，。！？、；：,.!?;:…—]/;
+  var PUNCT_RE = /[，。！？、；：,.!?;:…]/;
+  var BOUNCE_CHAR = '—';   // 打字结束后末尾跳动的符号
 
   function prefersReducedMotion() {
     return !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   }
 
-  // 末尾有意义（非标点）字符的下标，用于跳动高亮
-  function lastBounceIndex(text) {
-    var i = text.length - 1;
-    while (i > 0 && PUNCT_RE.test(text.charAt(i))) i--;
-    return i;
-  }
-
-  // 打字结束后：把末尾字符单独包成跳动 span，其余保持纯文本
-  function finishWithBounce(el, text) {
-    if (!text) return;
-    var idx = lastBounceIndex(text);
-    if (idx < 0) { el.textContent = text; return; }
-    el.textContent = '';
-    el.appendChild(document.createTextNode(text.slice(0, idx)));
+  // 打字结束后：在文本末尾追加一个跳动的「—」符号
+  function appendBounce(el) {
     var span = document.createElement('span');
     span.className = 'ai-summary-bounce';
-    span.textContent = text.charAt(idx);
+    span.textContent = BOUNCE_CHAR;
+    el.appendChild(document.createTextNode(' '));
     el.appendChild(span);
   }
 
@@ -57,7 +48,7 @@
           cursor.classList.remove('typing');
           cursor.classList.add('done');
         }
-        finishWithBounce(el, text);
+        appendBounce(el);
       }
     })();
   }

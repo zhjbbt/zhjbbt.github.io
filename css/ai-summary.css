@@ -1,0 +1,97 @@
+/* AI 摘要卡片样式 — 适配 Butterfly 主题 */
+/* 将此文件放到 source/css/ 目录下，Hexo 会自动加载 */
+
+.ai-summary-card {
+  margin: 1.5rem 0;
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 100%);
+  border: 1px solid #d0daf0;
+  box-shadow: 0 2px 8px rgba(66, 99, 235, 0.08);
+  transition: box-shadow 0.3s ease;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+[data-theme="dark"] .ai-summary-card,
+.dark .ai-summary-card {
+  background: linear-gradient(135deg, #1a1f35 0%, #1e2440 100%);
+  border-color: #2d3561;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.ai-summary-card:hover {
+  box-shadow: 0 4px 16px rgba(66, 99, 235, 0.15);
+}
+
+[data-theme="dark"] .ai-summary-card:hover,
+.dark .ai-summary-card:hover {
+  box-shadow: 0 4px 16px rgba(80, 120, 255, 0.2);
+}
+
+.ai-summary-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.ai-summary-icon {
+  width: 18px;
+  height: 18px;
+  color: #4263eb;
+  flex-shrink: 0;
+}
+
+[data-theme="dark"] .ai-summary-icon,
+.dark .ai-summary-icon {
+  color: #748ffc;
+}
+
+.ai-summary-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #4263eb;
+}
+
+[data-theme="dark"] .ai-summary-title,
+.dark .ai-summary-title {
+  color: #748ffc;
+}
+
+.ai-summary-badge {
+  margin-left: auto;
+  font-size: 0.72rem;
+  padding: 2px 8px;
+  border-radius: 20px;
+  background: rgba(66, 99, 235, 0.12);
+  color: #4263eb;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+[data-theme="dark"] .ai-summary-badge,
+.dark .ai-summary-badge {
+  background: rgba(116, 143, 252, 0.15);
+  color: #91a7ff;
+}
+
+.ai-summary-text {
+  margin: 0;
+  color: #495057;
+  text-align: justify;
+}
+
+[data-theme="dark"] .ai-summary-text,
+.dark .ai-summary-text {
+  color: #c1c2c5;
+}
+
+/* 响应式适配 */
+@media (max-width: 768px) {
+  .ai-summary-card {
+    margin: 1rem 0;
+    padding: 1rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}

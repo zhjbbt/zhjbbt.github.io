@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/posts/4a17b156.html</url>
+    <content><![CDATA[
+
+  
+    
+      
+    
+    AI 摘要
+  
+  
+    这是一篇Hexo博客的初始欢迎文章，介绍了Hexo快速上手的四个基本操作：通过hexo new创建新文章、使用hexo server运行本地服务器、利用hexo generate生成静态文件以及通过hexo deploy部署到远程站点，并提供了相关文档链接供读者进一步学习。
+  
+  
+    秋天科技 · AI 摘要
+    Agnes AI
+  
+Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post$ hexo new "My New Post"
+
+More info: Writing
+Run server$ hexo server
+
+More info: Server
+Generate static files$ hexo generate
+
+More info: Generating
+Deploy to remote sites$ hexo deploy
+
+More info: Deployment
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>入门</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>AI短视频5分钟教程</title>
     <url>/posts/56015.html</url>
     <content><![CDATA[
@@ -111,8 +151,8 @@ PROMPT你是一个爆款短视频脚本专家。请为一支约 60 秒的 [赛�
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/posts/4a17b156.html</url>
+    <title>休息的一天</title>
+    <url>/posts/xiuxi.html</url>
     <content><![CDATA[
 
   
@@ -122,32 +162,27 @@ PROMPT你是一个爆款短视频脚本专家。请为一支约 60 秒的 [赛�
     AI 摘要
   
   
-    这是一篇Hexo博客的初始欢迎文章，介绍了Hexo快速上手的四个基本操作：通过hexo new创建新文章、使用hexo server运行本地服务器、利用hexo generate生成静态文件以及通过hexo deploy部署到远程站点，并提供了相关文档链接供读者进一步学习。
+    本文介绍了一款用于简化Hexo博客多语言生成与管理的插件，并包含图片引用及七牛存储相关的功能测试内容，旨在帮助博客作者更高效地实现多语言站点构建和多媒体资源管理。
   
   
     秋天科技 · AI 摘要
     Agnes AI
   
-Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post$ hexo new "My New Post"
+休息的一天一个简化 Hexo 博客多语言生成和管理的插件
+测试2测试3图片引用
 
-More info: Writing
-Run server$ hexo server
+七牛测试
+图2
 
-More info: Server
-Generate static files$ hexo generate
+图三
 
-More info: Generating
-Deploy to remote sites$ hexo deploy
-
-More info: Deployment
 ]]></content>
       <categories>
-        <category>Hexo</category>
+        <category>测试</category>
       </categories>
       <tags>
-        <tag>入门</tag>
-        <tag>教程</tag>
+        <tag>休息</tag>
+        <tag>测试</tag>
       </tags>
   </entry>
   <entry>
@@ -441,41 +476,6 @@ More info: Deployment
         <tag>西藏</tag>
         <tag>尼泊尔</tag>
         <tag>新闻特写</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>休息的一天</title>
-    <url>/posts/xiuxi.html</url>
-    <content><![CDATA[
-
-  
-    
-      
-    
-    AI 摘要
-  
-  
-    本文介绍了一款用于简化Hexo博客多语言生成与管理的插件，并包含图片引用及七牛存储相关的功能测试内容，旨在帮助博客作者更高效地实现多语言站点构建和多媒体资源管理。
-  
-  
-    秋天科技 · AI 摘要
-    Agnes AI
-  
-休息的一天一个简化 Hexo 博客多语言生成和管理的插件
-测试2测试3图片引用
-
-七牛测试
-图2
-
-图三
-
-]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>休息</tag>
-        <tag>测试</tag>
       </tags>
   </entry>
   <entry>

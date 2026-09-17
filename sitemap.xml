@@ -42,14 +42,14 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zhjbbt.eu.org/posts/e51d0735.html</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://zhjbbt.eu.org/posts/5c2fafc7.html</loc>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zhjbbt.eu.org/posts/5c2fafc7.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://zhjbbt.eu.org/posts/e51d0735.html</loc>
+    <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -197,12 +197,12 @@
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://zhjbbt.eu.org/tags/github/</loc>
+    <loc>https://zhjbbt.eu.org/tags/%E9%9A%8F%E7%AC%94/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://zhjbbt.eu.org/tags/%E9%9A%8F%E7%AC%94/</loc>
+    <loc>https://zhjbbt.eu.org/tags/github/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

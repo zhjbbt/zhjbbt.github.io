@@ -1573,6 +1573,6 @@ div.videos[col='4'] iframe {
 
 /*valine评论背景失效问题*/
 .v[data-class=v] .veditor {
-  background: url('../img/valine_bg.png?v=27c5fdfc') 100% 100% no-repeat !important;
+  background: url('../img/valine_bg.png') 100% 100% no-repeat !important;
   background-size: 12% 100% !important;
 }

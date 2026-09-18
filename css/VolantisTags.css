@@ -250,7 +250,7 @@
 
 /* 头像点击特效 */
 .card-info-avatar:hover {
-  background: url(/img/avatar-hover.gif?v=6cd74bae);
+  background: url(/img/avatar-hover.gif);
 }
 
 /* 标签自定义颜色 */

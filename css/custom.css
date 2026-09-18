@@ -1,0 +1,378 @@
+/* custom.css — P2 合并：tagcloud3d + scrollbar-rainbow + badge(Butterfly主题内置) + reading-progress + ai-summary */
+/* 3D 标签云容器增强 */
+
+/* 标签页大标签云 */
+.tag-cloud-list {
+  -webkit-user-select: none;
+  user-select: none;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+  min-height: 360px;
+}
+
+.tag-cloud-list a {
+  color: #fff !important;
+  border: none !important;
+  transition: transform 0.15s ease-out, opacity 0.15s ease-out, box-shadow 0.3s ease !important;
+}
+
+.tag-cloud-list a:hover {
+  z-index: 200 !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25) !important;
+  transform: translateZ(60px) scale(1.25) !important;
+}
+
+/* 侧栏小标签云 */
+.card-tag-cloud {
+  -webkit-user-select: none;
+  user-select: none;
+  position: relative !important;
+  min-height: 220px !important;
+}
+
+.card-tag-cloud a {
+  color: #fff !important;
+  border: none !important;
+  transition: transform 0.15s ease-out, opacity 0.15s ease-out, box-shadow 0.3s ease !important;
+}
+
+.card-tag-cloud a:hover {
+  z-index: 200 !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* 彩虹渐变滚动条 + footer banner 背景（自定义，不影响主题源码） */
+
+/* ===== 滚动条：彩虹渐变（Chrome / Edge / Safari 等 webkit 内核） ===== */
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    #ff5f6d 0%,
+    #ffc371 18%,
+    #fff95b 36%,
+    #6bff95 54%,
+    #7afcff 72%,
+    #a18cd1 88%,
+    #ff9a9e 100%
+  ) !important;
+  border-radius: 4px;
+}
+
+/* Firefox 滚动条仅支持单色，取彩虹代表色 */
+* {
+  scrollbar-color: #ff9a9e transparent !important;
+}
+
+/* ===== footer：用 banner 图片背景覆盖 Butterfly 默认蓝(#49b1f5) ===== */
+/* 叠加半透明暗层，保证浅灰文字在亮图上仍可读 */
+#footer {
+  background-color: transparent !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)),
+    url(/img/index_bg.webp?v=328d18da) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* ===== 抵消 VolantisTags.css 的副作用 ===== */
+/* 其 .layout_page{opacity:.9} 会让全站内容轻微半透明(发虚)，此处还原为不透明 */
+.layout_page {
+  opacity: 1 !important;
+}
+
+/* 文章阅读进度：右侧垂直进度条 + 右下角「阅读进度」按钮 */
+
+/* ===== 右侧垂直阅读进度条 ===== */
+.reading-progress-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 0%;
+  background: linear-gradient(
+    180deg,
+    #ff9a9e 0%,
+    #fad0c4 50%,
+    #ff9a9e 100%
+  );
+  border-radius: 0 0 2px 2px;
+  z-index: 9999;
+  transition: height 0.1s linear;
+}
+
+[data-theme="dark"] .reading-progress-bar {
+  background: linear-gradient(
+    180deg,
+    #ff6b6b 0%,
+    #feca57 50%,
+    #ff6b6b 100%
+  );
+}
+
+/* ===== 右下角「阅读进度」按钮 ===== */
+#reading-progress-btn {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  padding: 0 6px !important;
+  width: auto !important;
+  min-width: 35px;
+  height: 35px !important;
+  background-color: var(--btn-bg, #fff) !important;
+  color: var(--btn-color, #363636) !important;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1 !important;
+  white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#reading-progress-btn:hover {
+  background-color: var(--btn-hover-color, #ff9a9e) !important;
+  color: #fff !important;
+}
+
+#reading-progress-btn .rp-num {
+  margin-right: 1px;
+  font-variant-numeric: tabular-nums;
+}
+
+[data-theme="dark"] #reading-progress-btn {
+  background-color: var(--btn-bg, #1f1f1f) !important;
+  color: var(--btn-color, #cfd8e3) !important;
+}
+
+[data-theme="dark"] #reading-progress-btn:hover {
+  background-color: #ff6b6b !important;
+  color: #fff !important;
+}
+
+/* 小屏保持精简 */
+@media (max-width: 900px) {
+  .reading-progress-bar {
+    width: 3px;
+  }
+}
+
+/* AI 摘要卡片样式 — macOS 窗口 + 打字机风格，适配 Butterfly 主题 */
+
+.ai-summary-card {
+  margin: 1.6rem 0;
+  border-radius: 14px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f7f9fc 0%, #eef2f7 100%);
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 6px 22px rgba(30, 41, 59, 0.08);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+[data-theme="dark"] .ai-summary-card,
+.dark .ai-summary-card {
+  background: linear-gradient(135deg, #1c2130 0%, #161b27 100%);
+  border-color: #2a3142;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35);
+}
+
+/* 顶部窗口栏：红黄绿圆点 + 标题 */
+.ai-summary-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.55rem 0.95rem;
+  background: #e9edf2;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="dark"] .ai-summary-bar,
+.dark .ai-summary-bar {
+  background: #232a3a;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ai-summary-dots {
+  display: inline-flex;
+  gap: 6px;
+}
+
+.ai-summary-dots .dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-red { background: #ff5f56; }
+.dot-yellow { background: #ffbd2e; }
+.dot-green { background: #28c840; }
+
+.ai-summary-bar-title {
+  font-size: 0.78rem;
+  color: #7a828f;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+[data-theme="dark"] .ai-summary-bar-title,
+.dark .ai-summary-bar-title {
+  color: #9aa3b2;
+}
+
+/* 正文区：固定最小高度，避免打字时高度跳动 */
+.ai-summary-body {
+  padding: 1.1rem 1.3rem;
+  min-height: 6.5em;
+  color: #374151;
+}
+
+[data-theme="dark"] .ai-summary-body,
+.dark .ai-summary-body {
+  color: #c9ced8;
+}
+
+.ai-summary-text {
+  margin: 0;
+  display: inline;
+  text-align: justify;
+}
+
+/* 打字机光标（下划线方块，闪烁） */
+.ai-summary-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1.05em;
+  background: currentColor;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  border-radius: 1px;
+  opacity: 0.85;
+  animation: ai-blink 1s steps(1) infinite;
+}
+
+.ai-summary-cursor.done {
+  animation: none;
+  opacity: 0;
+}
+
+@keyframes ai-blink {
+  0%, 50% { opacity: 0.85; }
+  50.01%, 100% { opacity: 0; }
+}
+
+/* 打字结束：末尾「—」符号小幅弹跳，贴着文字底部、与基线对齐 */
+.ai-summary-bounce {
+  display: inline-block;
+  margin-left: 0.15em;
+  vertical-align: baseline;
+  animation: ai-bounce 0.6s ease-in-out infinite;
+  color: inherit;
+}
+
+@keyframes ai-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-0.1em); }
+}
+
+/* 底部信息行 */
+.ai-summary-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.95rem;
+  font-size: 0.72rem;
+  color: #9aa1ad;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.015);
+}
+
+[data-theme="dark"] .ai-summary-footer,
+.dark .ai-summary-footer {
+  color: #7e8595;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.ai-summary-tag {
+  font-weight: 600;
+}
+
+.ai-summary-model {
+  opacity: 0.9;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .ai-summary-card { font-size: 0.9rem; margin: 1.2rem 0; }
+  .ai-summary-body { padding: 0.9rem 1rem; min-height: 7em; }
+}
+
+/* 尊重「减少动态效果」偏好：直接显示全文、隐藏光标与跳动 */
+@media (prefers-reduced-motion: reduce) {
+  .ai-summary-cursor { animation: none; display: none; }
+  .ai-summary-bounce { animation: none; }
+}
+
+.github-badge {
+    display:inline-block;
+    border-radius:4px;
+    text-shadow:none;
+    font-size:13px;
+    color:#fff;
+    line-height:15px;
+    margin-bottom:5px;
+}
+.github-badge a{
+    display: inline-block;
+    margin: 0 1px 5px;
+}
+.github-badge .badge-subject {
+    display:inline-block;
+    background-color:#4D4D4D;
+    padding:4px 4px 4px 6px;
+    border-top-left-radius:4px;
+    border-bottom-left-radius:4px;
+}
+.github-badge .badge-value {
+    display:inline-block;
+    padding:4px 6px 4px 4px;
+    border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+}
+.github-badge .bg-brightgreen {
+    background-color:#4DC820 !important;
+}
+.github-badge .bg-orange {
+    background-color:#FFA500 !important;
+}
+.github-badge .bg-yellow {
+    background-color:#D8b024 !important;
+}
+.github-badge .bg-blueviolet {
+    background-color:#8833D7 !important;
+}
+.github-badge .bg-pink {
+    background-color:#F26bAE !important;
+}
+.github-badge .bg-red {
+    background-color:#e05d44 !important;
+}
+.github-badge .bg-blue {
+    background-color:#007EC6 !important;
+}
+.github-badge .bg-lightgrey {
+    background-color:#9F9F9F !important;
+}
+.github-badge .bg-grey, .github-badge .bg-gray {
+    background-color:#555 !important;
+}
+.github-badge .bg-lightgrey, .github-badge .bg-lightgray {
+    background-color:#9f9f9f !important;
+}

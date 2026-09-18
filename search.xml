@@ -352,41 +352,6 @@ More info: Deployment
       </tags>
   </entry>
   <entry>
-    <title>休息的一天</title>
-    <url>//posts/xiuxi.html</url>
-    <content><![CDATA[
-
-  
-    
-      
-    
-    AI 摘要
-  
-  
-    本文介绍了一款用于简化Hexo博客多语言生成与管理的插件，并包含图片引用及七牛存储相关的功能测试内容，旨在帮助博客作者更高效地实现多语言站点构建和多媒体资源管理。
-  
-  
-    秋天科技 · AI 摘要
-    Agnes AI
-  
-休息的一天一个简化 Hexo 博客多语言生成和管理的插件
-测试2测试3图片引用
-
-七牛测试
-图2
-
-图三
-
-]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>休息</tag>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>尼泊尔泥石流，中国吉隆口岸遭遇毁灭性冲击，伤亡上百人｜新闻特写20260826</title>
     <url>//posts/nepal-jilong-2026.html</url>
     <content><![CDATA[
@@ -482,6 +447,41 @@ More info: Deployment
         <tag>西藏</tag>
         <tag>尼泊尔</tag>
         <tag>新闻特写</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>休息的一天</title>
+    <url>//posts/xiuxi.html</url>
+    <content><![CDATA[
+
+  
+    
+      
+    
+    AI 摘要
+  
+  
+    本文介绍了一款用于简化Hexo博客多语言生成与管理的插件，并包含图片引用及七牛存储相关的功能测试内容，旨在帮助博客作者更高效地实现多语言站点构建和多媒体资源管理。
+  
+  
+    秋天科技 · AI 摘要
+    Agnes AI
+  
+休息的一天一个简化 Hexo 博客多语言生成和管理的插件
+测试2测试3图片引用
+
+七牛测试
+图2
+
+图三
+
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>休息</tag>
+        <tag>测试</tag>
       </tags>
   </entry>
   <entry>

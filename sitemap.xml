@@ -12,19 +12,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zhjbbt.eu.org/posts/4a17b156.html</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://zhjbbt.eu.org/posts/jilong-port-rebuild-2026.html</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zhjbbt.eu.org/posts/nepal-jilong-2026.html</loc>
+    <loc>https://zhjbbt.eu.org/posts/4a17b156.html</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -36,7 +30,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zhjbbt.eu.org/posts/f6662e0c.html</loc>
+    <loc>https://zhjbbt.eu.org/posts/nepal-jilong-2026.html</loc>
     <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -48,16 +42,16 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zhjbbt.eu.org/posts/5c2fafc7.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://zhjbbt.eu.org/posts/f6662e0c.html</loc>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zhjbbt.eu.org/404.html</loc>
-    <lastmod>2026-09-18</lastmod>
+    <loc>https://zhjbbt.eu.org/posts/5c2fafc7.html</loc>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://zhjbbt.eu.org/about/index.html</loc>

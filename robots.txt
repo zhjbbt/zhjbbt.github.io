@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 Disallow: /pluginsSrc/
+# 低价值聚合页：屏蔽抓取，避免稀释权重（P7 审计）
+Disallow: /tags/
+Disallow: /categories/
+Disallow: /*/page/
 Sitemap: https://zhjbbt.eu.org/sitemap.xml

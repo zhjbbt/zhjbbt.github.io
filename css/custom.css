@@ -376,3 +376,22 @@
 .github-badge .bg-lightgrey, .github-badge .bg-lightgray {
     background-color:#9f9f9f !important;
 }
+
+/* ===== 404 页面：隐藏顶部导航处的 404 标题（site-title 因 front-matter title:404 被渲染成 404），保留中部 error_title 大 404 ===== */
+.page.type-404 #site-title {
+  display: none !important;
+}
+
+/* ===== 首页背景统一为单张：去掉 page-header 独立 banner 图及其暗遮罩，整屏仅由 #web_bg 一张背景，消除两层同图的拼接感 ===== */
+#page-header.full_page {
+  background-image: none !important;
+  background-color: transparent !important;
+}
+#page-header.full_page:not(.not-top-img):before {
+  display: none !important;
+}
+/* 去掉遮罩后加强文字阴影，保证 site-title/subtitle 在亮背景上仍可读 */
+#page-header.full_page #site-title,
+#page-header.full_page #site-subtitle {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6) !important;
+}

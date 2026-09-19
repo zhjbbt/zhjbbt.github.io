@@ -381,6 +381,18 @@
 .page.type-404 #site-title {
   display: none !important;
 }
+/* 404 页页头只保留导航条高度（主题默认 400px 且标题已隐藏，纯空气会把正文顶出首屏） */
+.page.type-404 #page-header.not-home-page {
+  height: 80px !important;
+  min-height: 0 !important;
+}
+.page.type-404 #page-site-info {
+  display: none !important;
+}
+/* 正文上移后给点呼吸感，整体首屏可见 */
+.page.type-404 .error-content {
+  margin-top: 4vh !important;
+}
 
 /* ===== 首页背景统一为单张：去掉 page-header 独立 banner 图及其暗遮罩，整屏仅由 #web_bg 一张背景，消除两层同图的拼接感 ===== */
 #page-header.full_page {

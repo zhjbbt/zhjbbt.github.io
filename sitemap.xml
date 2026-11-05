@@ -11,6 +11,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://zhjbbt.eu.org/posts/kali-deepseek-harness.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://zhjbbt.eu.org/posts/4a17b156.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -63,12 +68,12 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zhjbbt.eu.org/movies/index.html</loc>
+    <loc>https://zhjbbt.eu.org/music/index.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://zhjbbt.eu.org/music/index.html</loc>
+    <loc>https://zhjbbt.eu.org/movies/index.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

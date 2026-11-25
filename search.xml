@@ -275,6 +275,46 @@ kali 中已经安装了 deepseekharness, 请在 kali 中安装插件https://gith
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>//posts/4a17b156.html</url>
+    <content><![CDATA[
+
+  
+    
+      
+    
+    AI 摘要
+  
+  
+    这是一篇Hexo博客的初始欢迎文章，介绍了Hexo快速上手的四个基本操作：通过hexo new创建新文章、使用hexo server运行本地服务器、利用hexo generate生成静态文件以及通过hexo deploy部署到远程站点，并提供了相关文档链接供读者进一步学习。
+  
+  
+    秋天科技 · AI 摘要
+    Agnes AI
+  
+Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post$ hexo new "My New Post"
+
+More info: Writing
+Run server$ hexo server
+
+More info: Server
+Generate static files$ hexo generate
+
+More info: Generating
+Deploy to remote sites$ hexo deploy
+
+More info: Deployment
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>入门</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Muse 注册教程：只用 Gmail 注册，香港代理 + 日本区跳过等候名单</title>
     <url>//posts/muse-registration-guide.html</url>
     <content><![CDATA[
@@ -286,7 +326,7 @@ kali 中已经安装了 deepseekharness, 请在 kali 中安装插件https://gith
     AI 摘要
   
   
-    本文整理自 kkzui.com 的 Muse 注册实测教程。Muse 是 Meta 推出的 AI 助手，注册仅支持 Gmail。流程核心是：先用 Shifter 网页代理选香港区打开 muse.ai 完成首次注册，遇到 Something went wrong 报错时点代理内置浏览器后退一次；出现等候名单提示时不要加入，改选日本区重新访问跳过；重新注册并关联已有 Meta 账户后再次报错，同样后退一次；最后关闭 Shifter，回到自己的浏览器登录账户，在左下角设置中用邀请码 MTOH75 完成兑换。文章同时给出十步图解文字转录、六个常见问题、安全合规提醒以及是否值得折腾的判断。
+    本文整理自 kkzui.com 的 Muse 注册实测教程。Muse 是 Meta 推出的 AI 助手，注册仅支持 Gmail。流程核心是：先用 Shifter 网页代理选香港区打开 muse.ai 完成首次注册，遇到 Something went wrong 报错时点代理内置浏览器后退一次；出现等候名单提示时不要加入，改选日本区重新访问跳过；重新注册并关联已有 Meta 账户后再次报错，同样后退一次；最后关闭 Shifter，回到自己的浏览器登录账户，在左下角设置中用邀请码 H5TGFB 完成兑换。文章同时给出十步图解文字转录、六个常见问题、安全合规提醒以及是否值得折腾的判断。
   
   
     秋天科技 · AI 摘要
@@ -331,7 +371,7 @@ Shifter 网页代理：https://shifter.io/cn/web-proxy
 
 
 邀请码
-MTOH75（按原图转录，在自己浏览器里兑换）
+H5TGFB（按原图转录，在自己浏览器里兑换）
 
 
 流程来源
@@ -350,7 +390,7 @@ L 站大佬 ysy114514 分享，2026-11-23 按截图整理
 3. 换日本区重新访问，跳过等候名单步骤 7 是第二个关键细节。出现“加入 Muse 等候名单”提示时，不要点加入名单。回到 Shifter，网址重新改为 muse.ai，地区选日本，重新访问。
 也就是：香港区用来走完第一次注册和报错后退，日本区用来重新注册并真正进到下一步。
 4. 关联已有 Meta 账户，点继续就行步骤 8 里，重新注册、输验证码之后会提示关联已有 Meta 账户，点继续即可。出现这个提示是正常流程，不是账号冲突，不用换邮箱。
-5. 注册完立刻关 Shifter，兑换码回自己浏览器做步骤 9 点 Get Started，注册完成。步骤 10 标了“兑换邀请码”：关闭 Shifter，不要在 Shifter 的浏览器里操作接下来的步骤。在你自己的浏览器中打开 muse.ai 并登录刚注册的账户，点左下角「设置」，在兑换邀请码里兑换，邀请码是 MTOH75。
+5. 注册完立刻关 Shifter，兑换码回自己浏览器做步骤 9 点 Get Started，注册完成。步骤 10 标了“兑换邀请码”：关闭 Shifter，不要在 Shifter 的浏览器里操作接下来的步骤。在你自己的浏览器中打开 muse.ai 并登录刚注册的账户，点左下角「设置」，在兑换邀请码里兑换，邀请码是 H5TGFB。
 🚀 注册教程：十步走完第一步：打开网页代理 Shifter
 打开 https://shifter.io/cn/web-proxy
 在网站框输入 muse.ai
@@ -387,20 +427,20 @@ L 站大佬 ysy114514 分享，2026-11-23 按截图整理
 
 在你自己的浏览器中打开 muse.ai 并登录刚注册的账户
 点击左下角「设置」
-在兑换邀请码里输入：MTOH75
+在兑换邀请码里输入：H5TGFB
 
 ❓ 常见问题Q1：不用 Gmail，用 QQ &#x2F; 163 &#x2F; Outlook 能注册吗？按原流程不行。原图前置提醒和步骤 3 都明确写了必须是 Gmail，其他邮箱不要试，换邮箱等于重走全程。
 Q2：出现“Something went wrong”是不是失败了，要重开吗？不是失败，是流程里预期会出现的一步。按步骤 6 &#x2F; 步骤 8 的做法：点 Shifter 内置浏览器的后退按钮，后退一次，继续走。不要点页面里的“Go Back”或其他按钮，也不要直接刷新重开。
 Q3：不小心点了“加入等候名单”怎么办？按步骤 7 的做法：不要继续等，回到 Shifter，把网址重新改为 muse.ai，地区选日本，重新访问，再走一遍注册。
 Q4：提示“关联已有 Meta 账户”要换邮箱吗？不用换。按步骤 8，点继续，之后还会再报一次错，再点一次 Shifter 内置浏览器后退按钮后退一次。
-Q5：邀请码在哪里兑换？先关掉 Shifter，在你自己的浏览器打开 muse.ai 并登录刚注册的账户，点左下角「设置」，在兑换邀请码里输入 MTOH75。不要在 Shifter 的浏览器里兑换。
+Q5：邀请码在哪里兑换？先关掉 Shifter，在你自己的浏览器打开 muse.ai 并登录刚注册的账户，点左下角「设置」，在兑换邀请码里输入 H5TGFB。不要在 Shifter 的浏览器里兑换。
 Q6：验证码一直收不到怎么办？原图里没写这一步的排错。先确认填的是 Gmail、去 Gmail 里查收件箱和垃圾邮件，确认验证码没有过期；还收不到就等一会儿再重新获取一次，不要短时间内反复点。
 🛡️ 安全与合规
 注册只在必要页面输必要信息。邮箱、验证码、名字、出生日期按页面要求填，不要在代理页或注册页之外的地方输敏感信息。
 注册完立刻离开代理浏览器。Shifter 是第三方网页代理，注册过程走它的内置浏览器，步骤 10 明确要求关闭它，后续登录和使用都在你自己的浏览器里做。
 年龄按实填写。原流程要求出生日期大于 18 岁，按真实信息填，不要为了过验证乱填。
 遵守 Muse &#x2F; Meta 的条款。完成页明确写了继续使用即同意 Muse 条款和 Meta 的 AI 条款，哪些操作要你批准在设置里控制，使用前看一眼设置里的权限说明。
-邀请码按原图转录。邀请码 MTOH75 来自原图，原图没写它的来源和有效期，兑换结果以官方页面为准。
+邀请码按原图转录。邀请码 H5TGFB 来自原图，原图没写它的来源和有效期，兑换结果以官方页面为准。
 
 💡 值不值得折腾值得，前提是你本来就想试 Muse，又卡在等候名单这一步。整个流程没有要下载的软件、没有要付费的环节，核心就三句话：只能用 Gmail、报错就点 Shifter 后退、等候名单就换日本区重进。按这个顺序走，十步下来就能到 Get Started。
 不值得的情况也有：你没有 Gmail 也不想准备，或者你只是好奇 Muse 是什么、还没想好拿它干什么，那就先别折腾注册。Muse 的价值在授权后帮你操作和后台干活，注册完不用也是白占一个号。
@@ -419,46 +459,6 @@ Q6：验证码一直收不到怎么办？原图里没写这一步的排错。先
         <tag>Gmail</tag>
         <tag>Shifter</tag>
         <tag>保姆级教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>//posts/4a17b156.html</url>
-    <content><![CDATA[
-
-  
-    
-      
-    
-    AI 摘要
-  
-  
-    这是一篇Hexo博客的初始欢迎文章，介绍了Hexo快速上手的四个基本操作：通过hexo new创建新文章、使用hexo server运行本地服务器、利用hexo generate生成静态文件以及通过hexo deploy部署到远程站点，并提供了相关文档链接供读者进一步学习。
-  
-  
-    秋天科技 · AI 摘要
-    Agnes AI
-  
-Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post$ hexo new "My New Post"
-
-More info: Writing
-Run server$ hexo server
-
-More info: Server
-Generate static files$ hexo generate
-
-More info: Generating
-Deploy to remote sites$ hexo deploy
-
-More info: Deployment
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>入门</tag>
-        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
@@ -663,6 +663,41 @@ More info: Deployment
       </tags>
   </entry>
   <entry>
+    <title>休息的一天</title>
+    <url>//posts/xiuxi.html</url>
+    <content><![CDATA[
+
+  
+    
+      
+    
+    AI 摘要
+  
+  
+    本文介绍了一款用于简化Hexo博客多语言生成与管理的插件，并包含图片引用及七牛存储相关的功能测试内容，旨在帮助博客作者更高效地实现多语言站点构建和多媒体资源管理。
+  
+  
+    秋天科技 · AI 摘要
+    Agnes AI
+  
+休息的一天一个简化 Hexo 博客多语言生成和管理的插件
+测试2测试3图片引用
+
+七牛测试
+图2
+
+图三
+
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>休息</tag>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>尼泊尔泥石流，中国吉隆口岸遭遇毁灭性冲击，伤亡上百人｜新闻特写20260826</title>
     <url>//posts/nepal-jilong-2026.html</url>
     <content><![CDATA[
@@ -782,41 +817,6 @@ More info: Deployment
         <tag>西藏</tag>
         <tag>尼泊尔</tag>
         <tag>新闻特写</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>休息的一天</title>
-    <url>//posts/xiuxi.html</url>
-    <content><![CDATA[
-
-  
-    
-      
-    
-    AI 摘要
-  
-  
-    本文介绍了一款用于简化Hexo博客多语言生成与管理的插件，并包含图片引用及七牛存储相关的功能测试内容，旨在帮助博客作者更高效地实现多语言站点构建和多媒体资源管理。
-  
-  
-    秋天科技 · AI 摘要
-    Agnes AI
-  
-休息的一天一个简化 Hexo 博客多语言生成和管理的插件
-测试2测试3图片引用
-
-七牛测试
-图2
-
-图三
-
-]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>休息</tag>
-        <tag>测试</tag>
       </tags>
   </entry>
   <entry>
